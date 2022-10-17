@@ -1,0 +1,30 @@
+﻿LabID,CRA,Error,calCurves,resOffsets,resErrors,Material,Species,SiteName,Country,Longitude,Latitude,Region,Location ,ID
+Birm-23,7683,86,marine20,666,76,Bivalve shells,Unknown,PC-SJ-1973,South Shetland Islands,-58.6728,-62.2389,King George Island ,Potter Peninsula ,S&J
+Birm-48a,9670,230,marine20,666,76,Bivalve shells,Unknown,PC-SJ-1973,South Shetland Islands,-58.6728,-62.2389,King George Island ,Potter Peninsula ,S&J
+Beta-441402,7860,40,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+Beta-441403,7890,40,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67269,8010,85,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67267,7805,85,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+Beta - 431964,7780,30,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67270,8170,85,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67272,8115,80,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-71994,7920,20,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67268,7705,80,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67273,8005,85,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67275,7950,70,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67274,8020,90,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67276,8145,70,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-72000,8015,20,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67277,8300,75,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-71996,8005,20,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-71997,7995,20,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+Beta - 441404,8100,40,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-67278,8090,75,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-72001,7995,65,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+ETH-71995,8195,25,marine20,666,76,Bivalve shells,Unknown,PC-Pingfo-II,South Shetland Islands,-58.6729,-62.2389,King George Island ,Potter Peninsula ,nPII
+SUERC-14413,7831,39,marine20,666,76,Bivalve shells,Unknown,PC-RiverSection,South Shetland Islands,-58.67113,-62.23895,King George Island ,Potter Peninsula ,PC
+SUERC-14414,7883,39,marine20,666,76,Bivalve shells,Unknown,PC-RiverSection,South Shetland Islands,-58.67113,-62.23895,King George Island ,Potter Peninsula ,PC
+SUERC-14416,7853,38,marine20,666,76,Bivalve shells,Unknown,PC-RiverSection,South Shetland Islands,-58.67113,-62.23895,King George Island ,Potter Peninsula ,PC
+SUERC-14417,7842,37,marine20,666,76,Bivalve shells,Unknown,PC-RiverSection,South Shetland Islands,-58.67113,-62.23895,King George Island ,Potter Peninsula ,PC
+Beta-441400,1880,30,shcal20,0,0,Terrestrial moss,Unknown,PC-InlandMoraine,South Shetland Islands,-58.6466,-62.2473,King George Island ,Potter Peninsula ,IM
+Beta-441401,1850,30,shcal20,0,0,Terrestrial moss,Unknown,PC-InlandMoraine,South Shetland Islands,-58.6466,-62.2473,King George Island ,Potter Peninsula ,IM

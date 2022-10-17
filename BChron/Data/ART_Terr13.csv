@@ -1,0 +1,14 @@
+﻿id,ages,ageSds,position,thickness,calCurves,altitude
+ART-03A-2015,1380,30,0,1,shcal13,72
+ART-03B-2015,1380,30,0,1,shcal13,72
+ART-01A-2015,1980,30,0,1,shcal13,72
+ART-01B-2015,1950,30,0,1,shcal13,72
+ART-01A-2015 bis,1920,30,0,1,shcal13,72
+ART-01B-2015 bis,1940,30,0,1,shcal13,72
+ART-08-arriba-A-2015,2030,30,0,1,shcal13,16
+ART-08-arriba-B-2015,2050,30,0,1,shcal13,16
+ART-08-abajo-A-2015,1870,30,0,1,shcal13,16
+ART-08-abajo-B-2015,1900,30,0,1,shcal13,16
+ARTIGAS-1-A,2050,30,0,1,shcal13,7
+ARTIGAS-2-A,2010,30,0,1,shcal13,7
+ARTIGAS-2-B,1980,30,0,1,shcal13,7

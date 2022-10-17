@@ -1,0 +1,44 @@
+﻿LabID,CRA,Error,calCurves,resOffsets,resErrors,Material,Species,SiteName,Country,Longitude,Latitude,Region,Location ,ID
+AA-468016,3264,94,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.920621,-62.172472,King George Island ,Fildes Peninsula ,VNI1
+AA-468037,3195,76,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.917805,-62.17231,King George Island ,Fildes Peninsula ,VNI4
+AA-442798,2870,42,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.920325,-62.173932,King George Island ,Fildes Peninsula ,VNO5
+AA-442789,2799,42,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.920621,-62.172472,King George Island ,Fildes Peninsula ,VNI1
+AA-4680510,2715,35,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.918569,-62.172359,King George Island ,Fildes Peninsula ,VNI3
+AA-4680011,2609,35,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.919002,-62.172318,King George Island ,Fildes Peninsula ,VNI2
+AA-4427712,2500,41,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.916274,-62.171858,King George Island ,Fildes Peninsula ,VNI1
+AA-4680413,2159,44,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.919028,-62.172728,King George Island ,Fildes Peninsula ,VNI2
+AA-4680714,2151,52,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.916934,-62.17236,King George Island ,Fildes Peninsula ,VNI5
+AA-4428015,2136,47,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.919028,-62.172728,King George Island ,Fildes Peninsula ,VNI2
+AA-4680816,2037,44,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.916784,-62.172866,King George Island ,Fildes Peninsula ,VNI5
+AA-4356817,1258,37,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.916349,-62.172227,King George Island ,Fildes Peninsula ,VNI6
+AA-4356518,894,41,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.913515,-62.175722,King George Island ,Fildes Peninsula ,VNI4
+AA-4679819,855,32,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.920196,-62.172898,King George Island ,Fildes Peninsula ,VNI2
+AA-4680920,713,37,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.918044,-62.173597,King George Island ,Fildes Peninsula ,VNI3
+AA-4680221,677,45,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.920196,-62.172898,King George Island ,Fildes Peninsula ,VNI2
+AA-4427622,264,37,shcal20,0,0,Terrestrial moss in moraine,Moss,VN,South Shetland Islands,-58.921535,-62.172431,King George Island ,Fildes Peninsula ,VNI1
+AA-46810,1948,40,shcal20,0,0,Terrestrial moss in moraine,Moss,VK,South Shetland Islands,-58.9,-62.18,King George Island ,Fildes Peninsula ,VK
+AA-43571,1453,38,shcal20,0,0,Terrestrial moss in moraine,Moss,VK,South Shetland Islands,-58.9,-62.18,King George Island ,Fildes Peninsula ,VK
+AA-46811,1403,41,shcal20,0,0,Terrestrial moss in moraine,Moss,VK,South Shetland Islands,-58.9,-62.18,King George Island ,Fildes Peninsula ,VK
+AA-44275,1338,42,shcal20,0,0,Terrestrial moss in moraine,Moss,VK,South Shetland Islands,-58.9,-62.18,King George Island ,Fildes Peninsula ,VK
+AA-43570,1116,48,shcal20,0,0,Terrestrial moss in moraine,Moss,VK,South Shetland Islands,-58.9,-62.18,King George Island ,Fildes Peninsula ,VK
+Beta-441409,1380,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART03,South Shetland Islands,-58.89954,-62.1795,King George Island ,Fildes Peninsula ,ART03
+Beta-441410,1380,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART03,South Shetland Islands,-58.89954,-62.1795,King George Island ,Fildes Peninsula ,ART03
+Beta-441405,1980,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART01,South Shetland Islands,-58.89954,-62.1795,King George Island ,Fildes Peninsula ,ART01
+Beta-441406,1950,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART01,South Shetland Islands,-58.89954,-62.1795,King George Island ,Fildes Peninsula ,ART01
+Beta-441407,1920,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART01,South Shetland Islands,-58.89954,-62.1795,King George Island ,Fildes Peninsula ,ART01
+Beta-441408,1940,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART01,South Shetland Islands,-58.89954,-62.1795,King George Island ,Fildes Peninsula ,ART01
+Beta-441411,2030,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART08,South Shetland Islands,-58.86221,-62.18181,King George Island ,Fildes Peninsula ,ART08
+Beta-441412,2050,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART08,South Shetland Islands,-58.86221,-62.18181,King George Island ,Fildes Peninsula ,ART08
+Beta-441413,1870,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART08,South Shetland Islands,-58.86221,-62.18181,King George Island ,Fildes Peninsula ,ART08
+Beta-441414,1900,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART08,South Shetland Islands,-58.86221,-62.18181,King George Island ,Fildes Peninsula ,ART08
+Beta-441415,2050,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART02,South Shetland Islands,-58.88949,-62.18224,King George Island ,Fildes Peninsula ,ART02
+Beta-441417,2010,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART02,South Shetland Islands,-58.88949,-62.18224,King George Island ,Fildes Peninsula ,ART02
+Beta-441418,1980,30,shcal20,0,0,Terrestrial moss in moraine,Moss,ART02,South Shetland Islands,-58.88949,-62.18224,King George Island ,Fildes Peninsula ,ART02
+ETH-69688,7045,85,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART07,South Shetland Islands,-58.86095833,-62.18103611,King George Island ,Fildes Peninsula ,ART07
+ETH-69689,6590,70,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART07,South Shetland Islands,-58.86095833,-62.18103611,King George Island ,Fildes Peninsula ,ART07
+ETH-69690,6730,75,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART07,South Shetland Islands,-58.86095833,-62.18103611,King George Island ,Fildes Peninsula ,ART07
+ETH-69691,6265,75,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART09,South Shetland Islands,-58.86129444,-62.18071944,King George Island ,Fildes Peninsula ,ART09
+ETH-69692,5895,70,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART09,South Shetland Islands,-58.86129444,-62.18071944,King George Island ,Fildes Peninsula ,ART09
+ETH-69693,6235,70,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART10,South Shetland Islands,-58.85968889,-62.18028889,King George Island ,Fildes Peninsula ,ART10
+ETH-69694,5925,70,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART10,South Shetland Islands,-58.85968889,-62.18028889,King George Island ,Fildes Peninsula ,ART10
+ETH-69695,6520,75,marine20,666,76,Laternula sp. bivalve shells in moraine,Laternula sp.,ART10,South Shetland Islands,-58.85968889,-62.18028889,King George Island ,Fildes Peninsula ,ART10

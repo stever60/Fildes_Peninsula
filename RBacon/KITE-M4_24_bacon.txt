@@ -1,0 +1,29 @@
+## Ran on Mon Sep 27 14:19:42 2021 
+
+Cal 0 : ConstCal;
+Cal 1 : IntCal20, 4;
+Cal 2 : Marine20;
+Cal 3 : SHCal20, 4;
+
+##   id.   age    std   depth  delta.R  delta.STD     t.a   t.b   cc
+Det 0 : NA , -6.3, 9380000, 0,  0,  0,  3,  4,  0;
+Det 1 : 501582 , -6.3, 1, 0.25,  0,  0,  3,  4,  0;
+Det 2 : 516809 , -6.8, 1, 4,  0,  0,  3,  4,  0;
+Det 3 : 516810 , 1350, 30, 5.5,  700,  100,  3,  4,  3;
+Det 4 : 504801 , 1600, 30, 9.5,  700,  100,  3,  4,  3;
+Det 5 : T1a , 910, 40, 10.9,  0,  0,  3,  4,  3;
+Det 6 : 497408 , 9380, 30, 19.9,  700,  100,  3,  4,  3;
+Det 7 : 501584 , 1860, 30, 32.35,  0,  0,  3,  4,  3;
+Det 8 : T3a , 3370, 30, 38.6,  0,  0,  3,  4,  3;
+Det 9 : 501585 , 3350, 30, 41.85,  0,  0,  3,  4,  3;
+Det 10 : T5min , 4890, 40, 54.1,  0,  0,  3,  4,  3;
+Det 11 : T5max , 4890, 40, 55.1,  0,  0,  3,  4,  3;
+Det 12 : 498331 , 6410, 30, 65.1,  0,  0,  3,  4,  3;
+Det 13 : NA , 6410, 9.38e+09, 80,  0,  0,  3,  4,  3;
+
+### Depths and priors for fixed hiatuses, in descending order 
+##### cm  alpha beta      ha     hb
+Hiatus 0:  5,  1.5,  0.03,  0.1,  200;
+
+##		 K   MinAge   MaxAge   th0   th0p   w.a   w.b   alpha  beta  dmin  dmax seed
+Bacon 0: FixT, 24,  -71,  1e+06,  -7,  -6,  5,  5,  1.5,  0.03, 0, 72, 526398;

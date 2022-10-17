@@ -1,0 +1,85 @@
+﻿id,ages,ageSds,position,thickness,calCurves,LabID,altitude
+ByP_Lake 48,4570,60,0,1,shcal20,Ua-3923,120
+ByP_Lake 9,2830,250,0,1,shcal20,Lu-3466,100
+ByP_Lake 29,3210,220,0,1,shcal20,Lu-3463,100
+ByP_Cerro Negro Lake_1,1855,15,0,1,shcal20,ULA-4246,100
+ByP_Cerro Negro Lake_2,1955,20,0,1,shcal20,ULA-4701,100
+ByP_Cerro Negro Lake_3,2690,15,0,1,shcal20,ULA-4250,100
+ByP_Cerro Negro Lake_4,3010,20,0,1,shcal20,ULA-4245,100
+ByP_Chester Lake,4575,20,0,1,shcal20,ULA-4253,95
+ByP_Chester Cone Lake (Lake 2),2830,130,0,1,shcal20,Lu-3144,95
+ByP_Escondido Lake_1,1485,20,0,1,shcal20,ULA-4650,92
+ByP_Escondido Lake_2,1605,15,0,1,shcal20,ULA-4256,92
+ByP_Escondido Lake_3,1830,20,0,1,shcal20,ULA-4651,92
+ByP_Escondido Lake_4,1810,20,0,1,shcal20,ULA-4704,92
+ByP_Escondido Lake_5,2010,15,0,1,shcal20,ULA-4248,92
+ByP_Escondido Lake_6,2195,20,0,1,shcal20,ULA-4702,120
+ByP_Escondido Lake_7,2375,20,0,1,shcal20,ULA-4654,92
+ByP_Escondido Lake_8,2595,20,0,1,shcal20,ULA-4655,92
+ByP_Escondido Lake_9,2600,20,0,1,shcal20,ULA-4247,92
+ByP_Escondido Lake_10,2925,20,0,1,shcal20,ULA-4653,92
+ByP_Escondido Lake_11,3220,20,0,1,shcal20,ULA-4652,92
+ByP_Escondido Lake_12,3325,25,0,1,shcal20,ULA-4663,92
+ByP_Escondido Lake_13,3630,15,0,1,shcal20,ULA-4255,92
+ByP_Escondido Lake_14,3765,15,0,1,shcal20,ULA-4254,92
+ByP_Escondido Lake_15,4265,20,0,1,shcal20,ULA-4703,92
+ByP_Escondido Lake_16,4600,20,0,1,shcal20,ULA-4243,92
+ByP_ByP_Lake 49,3730,400,0,1,shcal20,Lu-3473,80
+ByP_Limnopolar Lake_1,555,30,0,1,shcal20,Poz-39062,80
+ByP_Limnopolar Lake_2,565,30,0,1,shcal20,Poz-39063,80
+ByP_Limnopolar Lake_3,490,30,0,1,shcal20,Beta-299978,80
+ByP_Limnopolar Lake_4,580,30,0,1,shcal20,Poz-39064,80
+ByP_Limnopolar Lake_5,850,30,0,1,shcal20,Poz-39066,80
+ByP_Limnopolar Lake_6,1045,35,0,1,shcal20,Poz-39067,80
+ByP_Limnopolar Lake_7,1280,30,0,1,shcal20,Poz-39068,80
+ByP_Limnopolar Lake_8,1445,30,0,1,shcal20,Poz-39070,80
+ByP_Limnopolar Lake_9,1490,30,0,1,shcal20,Beta-299979,80
+ByP_Limnopolar Lake_10,1665,35,0,1,shcal20,Poz-39071,80
+ByP_Limnopolar Lake_11,1990,30,0,1,shcal20,Poz-39072,80
+ByP_Limnopolar Lake_12,2150,35,0,1,shcal20,Poz-39073,80
+ByP_Limnopolar Lake_13,2475,30,0,1,shcal20,Poz-39074,80
+ByP_Limnopolar Lake_14,2915,35,0,1,shcal20,Poz-39075,80
+ByP_Limnopolar Lake_15,2790,35,0,1,shcal20,Poz-39076,80
+ByP_Limnopolar Lake_16,2815,35,0,1,shcal20,Poz-39077,80
+ByP_Limnopolar Lake_17,3210,35,0,1,shcal20,Poz-39255,80
+ByP_Limnopolar Lake_18,3440,35,0,1,shcal20,Poz-39080,80
+ByP_Limnopolar Lake_19,3625,35,0,1,shcal20,Poz-39081,80
+ByP_Limnopolar Lake_20,4150,35,0,1,shcal20,Poz-39082,80
+ByP_Limnopolar Lake_21,4770,40,0,1,shcal20,Poz-39083,80
+ByP_Limnopolar Lake_22,4670,40,0,1,shcal20,Poz-39086,80
+ByP_Limnopolar Lake_23,4680,40,0,1,shcal20,Poz-39087,80
+ByP_Limnopolar Lake_24,5610,40,0,1,shcal20,Poz-39088,80
+ByP_Limnopolar Lake_25,6700,50,0,1,shcal20,Poz-39090,80
+ByP_Midge Lake_1,755,105,0,1,shcal20,Ua-1216,70
+ByP_Midge Lake_2,1340,100,0,1,shcal20,Ua-1217,70
+ByP_Midge Lake_3,2635,100,0,1,shcal20,Ua-1218,70
+ByP_Midge Lake_4,2715,100,0,1,shcal20,Ua-1219,70
+ByP_Midge Lake_5,3735,250,0,1,shcal20,Ua-1220,70
+ByP_Lake 30,4480,60,0,1,shcal20,Ua-3925,65
+ByP_Lake 22,3430,180,0,1,shcal20,Lu-3464,50
+ByP_Lake Åsa_Lake 35,3480,140,0,1,shcal20,Lu-3089,35
+ByP_Lake Åsa,4600,100,0,1,shcal20,Lu-3088,35
+FP_Hochlandsee,5410,185,0,1,shcal20,HD11417-11148,101
+FP_Hotel Lake,4960,120,0,1,shcal20,Lu-3680,40
+FP_Gaoshan Lake,2215,37,0,1,shcal20,SUERC-18932,34.5
+FP_Belén Lake_1,320,35,0,1,shcal20,SUERC-18928,19.9
+FP_Belén Lake_2,4829,38,0,1,shcal20,SUERC-18931,19.9
+FP_Kiteschee Lake_1,-6,1,0,1,normal,Beta-501582,15
+FP_Kiteschee Lake_2,-7,1,0,1,normal,Beta-516809,15
+FP_Kiteschee Lake_3,6180,150,0,1,shcal20,HD11163-10998,15.5
+FP_Long Lake,2087,37,0,1,shcal20,SUERC-18933,15
+FP_Yanou Lake_1,-7,1,0,1,normal,SUERC-22325,14.5
+FP_Yanou Lake_2,907,37,0,1,shcal20,SUERC-18934,14.5
+FP_Yanou Lake_3,1430,30,0,1,shcal20,Beta-316286,14.5
+FP_Yanou Lake_4,3370,30,0,1,shcal20,Beta-316287,14.5
+FP_Yanou Lake_5,4170,30,0,1,shcal20,Beta-316288,14.5
+FP_Yanou Lake_6,4273,37,0,1,shcal20,SUERC-18935,14.5
+FP_Yanou Lake_7,4847,37,0,1,shcal20,SUERC-22310,14.5
+FP_Yanou Lake_8,5051,38,0,1,shcal20,SUERC-22311,14.5
+FP_Ardley Lake_1,-7,1,0,1,normal,Beta-338226,18
+FP_Ardley Lake_2,860,30,0,1,shcal20,Beta-338226,18
+FP_Ardley Lake_3,1440,40,0,1,shcal20,Beta-338227,18
+FP_Ardley Lake_4,4091,36,0,1,shcal20,SUERC-22307,18
+FP_Ardley Lake_5,4484,38,0,1,shcal20,SUERC-22308,18
+FP_Ardley Lake_6,4469,38,0,1,shcal20,SUERC-22309,18
+BP_BP_Lake 12,2450,30,0,1,shcal20,Beta-335037,102
