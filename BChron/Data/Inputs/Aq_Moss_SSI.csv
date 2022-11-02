@@ -64,7 +64,7 @@ FP_Hotel Lake,4960,120,0,1,shcal20,Lu-3680,40
 FP_Gaoshan Lake,2215,37,0,1,shcal20,SUERC-18932,34.5
 FP_Belén Lake_1,320,35,0,1,shcal20,SUERC-18928,19.9
 FP_Belén Lake_2,4829,38,0,1,shcal20,SUERC-18931,19.9
-FP_Kiteschee Lake_1,-6,1,0,1,normal,Beta-501582,15
+FP_Kiteschee Lake_1,-100,30,0,1,normal,Beta-501582,15
 FP_Kiteschee Lake_2,-7,1,0,1,normal,Beta-516809,15
 FP_Kiteschee Lake_3,6180,150,0,1,shcal20,HD11163-10998,15.5
 FP_Long Lake,2087,37,0,1,shcal20,SUERC-18933,15
@@ -83,3 +83,6 @@ FP_Ardley Lake_4,4091,36,0,1,shcal20,SUERC-22307,18
 FP_Ardley Lake_5,4484,38,0,1,shcal20,SUERC-22308,18
 FP_Ardley Lake_6,4469,38,0,1,shcal20,SUERC-22309,18
 BP_BP_Lake 12,2450,30,0,1,shcal20,Beta-335037,102
+PP_L15_1,-44,1.1,0,1,normal,Beta-384259,20
+PP_L15_2,-40.7,2.4,0,1,normal,Beta-384260,20
+PP_L15_3,710,40,0,1,shcal20,Beta-386311,20
