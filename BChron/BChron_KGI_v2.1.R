@@ -1,16 +1,17 @@
-# BChron KGI for Fildes and Potter papers 
 
-#Load packages needed
+# BChron KGI version 2.1 - for Fildes and Potter papers 
+
+#Load packages
 library(Bchron)
 library(rcarbon)
-library(cowplot) # for plotting
-library (dplyr)
-library (tidyr)
-library (ggplot2)
-library (parameters)
-library (mclust)
-library (NbClust)
-library (cluster)
+library(cowplot)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(parameters)
+library(mclust)
+library(NbClust)
+library(cluster)
 
 #clear previous console
 remove (list = ls())
@@ -41,7 +42,6 @@ if(!is.null(dev.list())) dev.off()
 #density = The density estimate based on the above age grid
 
 
-
 # SECTION 1: import datasets ------------------------------
 
 #set working directory on mac
@@ -64,7 +64,7 @@ colnames(ART_Terr20_1)
 BChron_column_order <- c("id", "ages", "ageSds", "position", "thickness", "calCurves", "LabID")
 ART_Terr20 <- ART_Terr20_1[, BChron_column_order]
 ART_Terr20
-write.csv(ART_Terr20,"Inputs/ART_Terr20.csv", row.names = FALSE)
+write.csv(ART_Terr20,"Inputs/x2_ART_Terr20.csv", row.names = FALSE)
 x2 <- ART_Terr20
 
 # x2.1 - Fildes paper - all Shetland I Moraine terrestrial C14 data - this study & Hall 2007
@@ -85,7 +85,7 @@ colnames(ART_Hall_Terr20_4)
 BChron_column_order <- c("id", "ages", "ageSds", "position", "thickness", "calCurves", "LabID")
 ART_Hall_Terr20 <- ART_Hall_Terr20_4[, BChron_column_order]
 ART_Hall_Terr20
-write.csv(ART_Hall_Terr20,"Inputs/ART_Hall_Terr20.csv", row.names = FALSE)
+write.csv(ART_Hall_Terr20,"Inputs/x2.1_ART_Hall_Terr20.csv", row.names = FALSE)
 x2.1 <- ART_Hall_Terr20
 
 # x4 - Fildes paper - all Shetland I Moraine marine C14 data - this study and Hall 2007 <20ka
@@ -104,69 +104,74 @@ names(ART_Hall_Mar20_4)[names(ART_Hall_Mar20_4) == "FeatureID"] <- "id"
 names(ART_Hall_Mar20_4)[names(ART_Hall_Mar20_4) == "Altitude_masl"] <- "position"
 colnames(ART_Hall_Mar20_4)
 BChron_column_order <- c("id", "ages", "ageSds", "position", "thickness", "calCurves", "LabID")
-ART_Hall_Mar20 <- ART_Hall_Mar20_4[, BChron_column_order]
-ART_Hall_Mar20
-write.csv(ART_Hall_Mar20,"Inputs/ART_Mar20666.csv", row.names = FALSE)
-x4 <- ART_Hall_Mar20
+ART_Hall_Mar20666 <- ART_Hall_Mar20_4[, BChron_column_order]
+ART_Hall_Mar20666
+write.csv(ART_Hall_Mar20666,"Inputs/x4_ART_Hall_Mar20666.csv", row.names = FALSE)
+x4 <- ART_Hall_Mar20666
 
-# Read in csv files - fast start  -----------------------------------------
+
+# Read in csv input files - fast start  -----------------------------------------
 
 # Fildes paper - new Artigas Beach C14 data - this study
-x2 <- read.csv("Inputs/ART_Terr20.csv")
+x2 <- read.csv("nputs/x2_ART_Terr20.csv")
 
 # Fildes paper - all Shetland I Moraine terrestrial C14 data - this study & Hall 2007
-x2.1 <- read.csv("Inputs/ART_Hall_Terr20.csv")
+x2.1 <- read.csv("Inputs/x2.1_ART_Hall_Terr20.csv")
 
 # Fildes paper - all Shetland I Moraine marine C14 data - this study and Hall 2007 <20ka
-x4 <- read.csv("Inputs/ART_Mar20666.csv")
+x4 <- read.csv("Inputs/x4_ART_Hall_Mar20666.csv")
 
 # Advance - max age constraints
-x6 <- read.csv("Inputs/Advance_Potter.csv")
-x7 <- read.csv("Inputs/Advance_Fildes.csv")
-x8 <- read.csv("Inputs/Advance_KGI.csv")
+x6 <- read.csv("Inputs/x6_Advance_Potter.csv")
+x7 <- read.csv("Inputs/x7_Advance_Fildes.csv")
+x8 <- read.csv("Inputs/x8_Advance_KGI.csv")
 
 # Retreat - min age constraints
-x9 <- read.csv("Inputs/Retreat_KGI.csv")
-x10 <- read.csv("Inputs/Retreat_SSI.csv")
-x15 <- read.csv("Inputs/Lakes_basal_Fildes.csv")
-x17 <- read.csv("Inputs/Retreat_KGI_earlyHolocene.csv")
+x9 <- read.csv("Inputs/x9_Retreat_KGI.csv")
+x10 <- read.csv("Inputs/x10_Retreat_SSI.csv")
+x15 <- read.csv("Inputs/x15_Lakes_basal_Fildes.csv")
+x17 <- read.csv("Inputs/x17_Retreat_KGI_earlyHolocene.csv")
 
 # Retreat - cosmogenic min age constraints
-x13 <- read.csv("Inputs/Cosmo_Fildes.csv")
+x13 <- read.csv("Inputs/x13_Cosmo_Fildes.csv")
 v <- c('ages')  ## create vector of column names to recaluculate as cal ka BP
 x13[ages] <- x13[ages] - (2010-1950)  ## subtract 1950 from samples collection date and assign back
-x13b <- read.csv("Inputs/Cosmo_Potter.csv")
+x13b <- read.csv("Inputs/x13b_Cosmo_Potter.csv")
 x13b[v] <- x13b[v] - (2010-1950)  ## subtract 1950 from samples collection date and assign back
-x14 <- read.csv("Inputs/Cosmo_KGI.csv")
+x14 <- read.csv("Inputs/x14_Cosmo_KGI.csv")
 x14[v] <- x14[v] - (2010-1950)  ## subtract 1950 from samples collection date and assign back
 
 # Warm conditions similar to present - Sub-aquatic moss & GDGT Temp
-x5 <- read.csv("Inputs/Aq_moss_Fildes.csv")
+x5 <- read.csv("Inputs/x5_Aq_moss_Fildes.csv")
 x5 <- subset(x5, calCurves=="shcal20", 
              select=c(id:altitude)) # remove post-bomb (normal) ages for density phase analysis as prob density not comparable to sh20 data & post-bomb data can't be calibrated in BChron and RCarbon
-x11 <- read.csv("Inputs/Aq_Moss_KGI.csv")
-x12 <- read.csv("Inputs/Aq_Moss_SSI.csv")
-x16 <- read.csv("Inputs/Aq_Moss_Fildes.csv")
-#x17 <- read.csv("Inputs/Yanou_GDGT.csv")
+x11 <- read.csv("Inputs/x11_Aq_Moss_KGI.csv")
+x12 <- read.csv("Inputs/x12_Aq_Moss_SSI.csv")
+x16 <- read.csv("Inputs/x16_Aq_Moss_Fildes.csv")
+x17 <- read.csv("Inputs/Yanou_GDGT.csv")
 
 # Kiteschee Lake - diatom data
-#x18 <- read.csv("Inputs/Kite_diatoms.csv")
+x18 <- read.csv("Inputs/Kite_diatoms.csv")
 
 # Published AP -regional - global data
-x20 <- read.csv("Inputs/Kaplan2020_JRI_Advance.csv")
+x20 <- read.csv("Inputs/x20_Kaplan2020_JRI_Advance.csv")
 x20[v] <- x20[v] - (2010-1950)  ## subtract 1950 from samples collection date and assign back
-x21 <- read.csv("Inputs/Kaplan2020_JRI_Retreat.csv")
+x21 <- read.csv("Inputs/x21_Kaplan2020_JRI_Retreat.csv")
 x21[v] <- x21[v] - (2010-1950)  ## subtract 1950 from samples collection date and assign back
-x22 <- read.csv("Inputs/WAIS_volcanic_flux.csv")
-#x23 <- read.csv("Inputs/JRI_ice_core.csv")
-#x24 <- read.csv("Inputs/Marcott2013_SH30-90.csv")
-#x25 <- read.csv("Inputs/Kaufmann2020.csv")
+x22 <- read.csv("Inputs/x22_WAIS_volcanic_flux.csv")
+#x23 <- read.csv("Inputs/x23_JRI_ice_core.csv")
+#x24 <- read.csv("Inputs/x24_Marcott2013_SH30-90.csv")
+#x25a <- read.csv("Inputs/x25a_Kaufmann2020_global.csv")
+#x25b <- read.csv("Inputs/x25b_Kaufmann2020_60_90S.csv")
+#x26 <- read.csv("Inputs/x26_Miliken2009.csv")
 
 # Mechanisms figure 
-#x30 <- read.csv("Inputs/Insolation62S.csv")
-#x31 <- read.csv("Inputs/GlobalIrradiance.csv")
-#x32 <- read.csv("Inputs/Saunders2018_SHW.csv")
-#x33 <- read.csv("Inputs/Moreno2018_SAM.csv")
+#x30 <- read.csv("Inputs/x30_Laskar_Ins_62S.csv")
+#x31 <- read.csv("Inputs/x31_Bag_Irradiance.csv")
+#x32 <- read.csv("Inputs/x32_Saunders2018_SPECIM.csv")
+#x33 <- read.csv("Inputs/x33_Saunders2018_Cond.csv")
+#x34 <- read.csv("Inputs/x34_Moreno2018_SAM.csv")
+#x35 <- read.csv("Inputs/x35_Vol_flux_WAIS.csv")
 
 # Calibration  --------------------------------------------------
 
@@ -243,7 +248,6 @@ xAges17_sum <- summary (xAges17, prob = 95.4)
 xAges20_sum <- summary (xAges20, prob = 95.4)
 xAges21_sum <- summary (xAges21, prob = 95.4)
 
-
 # Combine ages into a density plot for one 'event' with different  --------
 
 # This function runs a non-parametric phase model on 14C and non-14C ages via Gaussian Mixture density estimation
@@ -297,22 +301,22 @@ xDens21 <- with(x21, BchronDensity(ages = ages, ageSds = ageSds,calCurves = calC
 #xDens17_output <- merge(xDens17$ageGrid,xDens17$densities)
 
 # Write to file for plotting in other programs
-#write.csv(ART_Terr20_Dens_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/ART_Terr20_densities.csv", row.names = FALSE)
-#write.csv(xDens2.1_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens2.1_densities.csv", row.names = FALSE)
-#write.csv(xDens4_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens4_densities.csv", row.names = FALSE)
-#write.csv(xDens6_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens6_densities.csv", row.names = FALSE)
-#write.csv(xDens7_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens7_densities.csv", row.names = FALSE)
-#write.csv(xDens8_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens8_densities.csv", row.names = FALSE)
-#write.csv(xDens9_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens9_densities.csv", row.names = FALSE)
-#write.csv(xDens10_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens10_densities.csv", row.names = FALSE)
-#write.csv(xDens11_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens11_densities.csv", row.names = FALSE)
-#write.csv(xDens12_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens12_densities.csv", row.names = FALSE)
-#write.csv(xDens13_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens13_densities.csv", row.names = FALSE)
-#write.csv(xDens13b_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens13_densities.csv", row.names = FALSE)
-#write.csv(xDens14_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens14_densities.csv", row.names = FALSE)
-#write.csv(xDens15_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens15_densities.csv", row.names = FALSE)
-#write.csv(xDens16_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens16_densities.csv", row.names = FALSE)
-#write.csv(xDens17_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Output/xDens17_densities.csv", row.names = FALSE)
+#write.csv(ART_Terr20_Dens_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/ART_Terr20_densities.csv", row.names = FALSE)
+#write.csv(xDens2.1_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens2.1_densities.csv", row.names = FALSE)
+#write.csv(xDens4_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens4_densities.csv", row.names = FALSE)
+#write.csv(xDens6_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens6_densities.csv", row.names = FALSE)
+#write.csv(xDens7_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens7_densities.csv", row.names = FALSE)
+#write.csv(xDens8_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens8_densities.csv", row.names = FALSE)
+#write.csv(xDens9_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens9_densities.csv", row.names = FALSE)
+#write.csv(xDens10_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens10_densities.csv", row.names = FALSE)
+#write.csv(xDens11_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens11_densities.csv", row.names = FALSE)
+#write.csv(xDens12_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens12_densities.csv", row.names = FALSE)
+#write.csv(xDens13_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens13_densities.csv", row.names = FALSE)
+#write.csv(xDens13b_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens13_densities.csv", row.names = FALSE)
+#write.csv(xDens14_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens14_densities.csv", row.names = FALSE)
+#write.csv(xDens15_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens15_densities.csv", row.names = FALSE)
+#write.csv(xDens16_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens16_densities.csv", row.names = FALSE)
+#write.csv(xDens17_output,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputs/xDens17_densities.csv", row.names = FALSE)
 
 
 # Summary of phases at prob = 0.95 and 0.68 ----------------------------------------
@@ -361,11 +365,12 @@ summary(xDens21, type = "outliers", prob = 0.68) # Look at outlier probabilities
 
 
 
+
 # SECTION 2 - RCarbon data and plots -------------------------------------------------
 
 # Fildes Advance constraints - RCarbon for SPD and KDE plots to compare with B --------
 
-r7 <- read.csv("Advance_KGI_RCarbon.csv")
+r7 <- read.csv("Inputs/r7_Advance_KGI_RCarbon.csv")
 head(r7)
 #pooled dates from the same event prior to calibration into a weighted mean and std err
 #to check for internal consistency before calibration
@@ -391,9 +396,9 @@ r7_C14summary <- describe_distribution(r7_cal_sum$CRA)
 r7_Calsummary  <- describe_distribution(r7_cal_sum$MedianBP)
 r7_C14summary
 r7_Calsummary 
-write.csv(r7_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r7_C14summary.csv", row.names = FALSE)
-write.csv(r7_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r7_Calsummary.csv", row.names = FALSE)
-write.csv(r7_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r7_cal_sum.csv", row.names = FALSE)
+write.csv(r7_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r7_C14summary.csv", row.names = FALSE)
+write.csv(r7_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r7_Calsummary.csv", row.names = FALSE)
+write.csv(r7_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r7_cal_sum.csv", row.names = FALSE)
 
 #++++++ Investigate subsets +++++++
 # Subsets of all dates that have a probability above 0.5 and are <6000 BP
@@ -524,7 +529,7 @@ write.csv(r7_spd$grid,"/Users/Steve/Dropbox/BAS/Data/R/RCarbon/r7_spd.csv", row.
 
 # Aquatic moss Fildes - RCarbon - for SPD and KDE -------------------------
 
-r5 <- read.csv("Aq_moss_Fildes_RCarbon.csv")
+r5 <- read.csv("Inputs/r5_Aq_moss_Fildes_RCarbon.csv")
 head(r5)
 #pooled dates from the same event prior to calibration into a weighted mean and std err
 #to check for internal consistency before calibration
@@ -550,9 +555,9 @@ r5_C14summary <- describe_distribution(r5_cal_sum$CRA)
 r5_Calsummary  <- describe_distribution(r5_cal_sum$MedianBP)
 r5_C14summary
 r5_Calsummary 
-write.csv(r5_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r5_C14summary.csv", row.names = FALSE)
-write.csv(r5_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r5_Calsummary.csv", row.names = FALSE)
-write.csv(r5_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r5_cal_sum.csv", row.names = FALSE)
+write.csv(r5_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r5_C14summary.csv", row.names = FALSE)
+write.csv(r5_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r5_Calsummary.csv", row.names = FALSE)
+write.csv(r5_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r5_cal_sum.csv", row.names = FALSE)
 
 #++++++ Investigate subsets +++++++
 # Subsets of all dates that have a probability above 0.5 and are <6000 BP
@@ -707,9 +712,9 @@ r11_C14summary <- describe_distribution(r11_cal_sum$CRA)
 r11_Calsummary  <- describe_distribution(r11_cal_sum$MedianBP)
 r11_C14summary
 r11_Calsummary 
-write.csv(r11_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r11_C14summary.csv", row.names = FALSE)
-write.csv(r11_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r11_Calsummary.csv", row.names = FALSE)
-write.csv(r11_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r11_cal_sum.csv", row.names = FALSE)
+write.csv(r11_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r11_C14summary.csv", row.names = FALSE)
+write.csv(r11_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r11_Calsummary.csv", row.names = FALSE)
+write.csv(r11_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r11_cal_sum.csv", row.names = FALSE)
 
 #++++++ Investigate subsets +++++++
 # Subsets of all dates that have a probability above 0.5 and are <6000 BP
@@ -837,43 +842,43 @@ write.csv(r11_spd$grid,"/Users/Steve/Dropbox/BAS/Data/R/RCarbon/r11_spd.csv", ro
 
 # Fildes Lakes basal ages - RCarbon - for SPD and KDE  --------------------
 
-r11 <- read.csv("Fildes_lakes_RCarbon.csv")
-head(r11)
+r15 <- read.csv("Inputs/r15_Fildes_lakes_RCarbon.csv")
+head(r15)
 #pooled dates from the same event prior to calibration into a weighted mean and std err
 #to check for internal consistency before calibration
-r11_C14 = r11$CRA
-errors_r11 = r11$Error
-id_r11 = r11$LabID
-pool_r11 <- poolDates(r11_C14,errors_r11,id_r11)
-pool_r11
+r15_C14 = r15$CRA
+errors_r15 = r15$Error
+id_r15 = r15$LabID
+pool_r15 <- poolDates(r15_C14,errors_r15,id_r15)
+pool_r15
 
 #Calibration
-r11_cal <- calibrate(r11$CRA, r11$Error, normalised=TRUE, calCurves=r11$calCurves,
-                    resOffsets=r11$resOffsets,resErrors=r11$resErrors,ids=r11$LabID)
-head(r11_cal)
+r15_cal <- calibrate(r15$CRA, r15$Error, normalised=TRUE, calCurves=r15$calCurves,
+                    resOffsets=r15$resOffsets,resErrors=r15$resErrors,ids=r15$LabID)
+head(r15_cal)
 
 #Output summary stats of prob density distributions for each
-r11_sum <- summary(r11_cal, calendar = "BP") #prob = 0.954 #for just two-sigma range
-r11_sum <- rename(r11_sum, LabID = DateID)
-r11_cal_sum <- left_join(r11, r11_sum, by = c("LabID"))
-r11_cal_sum
+r15_sum <- summary(r15_cal, calendar = "BP") #prob = 0.954 #for just two-sigma range
+r15_sum <- rename(r15_sum, LabID = DateID)
+r15_cal_sum <- left_join(r15, r15_sum, by = c("LabID"))
+r15_cal_sum
 
 #Write summary stats for CRA and median Cal BP to file
-r11_C14summary <- describe_distribution(r11_cal_sum$CRA)
-r11_Calsummary  <- describe_distribution(r11_cal_sum$MedianBP)
-r11_C14summary
-r11_Calsummary 
-write.csv(r11_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r11_C14summary.csv", row.names = FALSE)
-write.csv(r11_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r11_Calsummary.csv", row.names = FALSE)
-write.csv(r11_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r11_cal_sum.csv", row.names = FALSE)
+r15_C14summary <- describe_distribution(r15_cal_sum$CRA)
+r15_Calsummary  <- describe_distribution(r15_cal_sum$MedianBP)
+r15_C14summary
+r15_Calsummary 
+write.csv(r15_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r15_C14summary.csv", row.names = FALSE)
+write.csv(r15_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r15_Calsummary.csv", row.names = FALSE)
+write.csv(r15_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r15_cal_sum.csv", row.names = FALSE)
 
 #++++++ Investigate subsets +++++++
 # Subsets of all dates that have a probability above 0.5 and are <6000 BP
-r11_subset1 = which.CalDates(r11_cal,BP<6000,p=0.5)
-r11_subset1
+r15_subset1 = which.CalDates(r15_cal,BP<6000,p=0.5)
+r15_subset1
 # Subsets of all dates that have a probability above 0.5 and are between 1000 and 2000 BP
-r11_subset2 = which.CalDates(r11_cal,BP>1000&BP<2000,p=0.5)
-r11_subset2
+r15_subset2 = which.CalDates(r15_cal,BP>1000&BP<2000,p=0.5)
+r15_subset2
 
 ## ++++++++ Combine calibrated ages into a SPD - Summed Prob. Dist +++++++++
 # Plot distributions based on Site Name column as the group 
@@ -890,14 +895,14 @@ if(!is.null(dev.list())) dev.off()
 #examine groups using hierachical cluster analysis 
 #This clustering method defines the cluster distance between two clusters to
 # be the maximum distance between their individual components
-r11_dd <- dist(scale(r11$CRA), method = "euclidean")
-r11_hc <- hclust(r11_dd, method = "ward.D2")
-cutree(r11_hc, h = 100)
-as.dendrogram(r11_hc)
-plot(r11_hc, labels=r11$ID, main = "Cluster Dendrrogram", hang = -1, cex=0.8, xlab = NULL, ylab = "Height")
+r15_dd <- dist(scale(r15$CRA), method = "euclidean")
+r15_hc <- hclust(r15_dd, method = "ward.D2")
+cutree(r15_hc, h = 100)
+as.dendrogram(r15_hc)
+plot(r15_hc, labels=r15$ID, main = "Cluster Dendrrogram", hang = -1, cex=0.8, xlab = NULL, ylab = "Height")
 
 ## Compare the grouping:
-group <- cutree(r11_hc, k = c(3,4))
+group <- cutree(r15_hc, k = c(3,4))
 table(grp2 = group[,"3"], grp4 = group[,"4"])
 
 # test how many clusters are present in the data - 
@@ -905,24 +910,24 @@ table(grp2 = group[,"3"], grp4 = group[,"4"])
 # In case of ties, it will select the solution with fewer clusters.
 if (require("mclust", quietly = TRUE) &&
     require("cluster", quietly = TRUE)) {
-  n_clusters(r11$CRA, package = c("mclust", "cluster"))
+  n_clusters(r15$CRA, package = c("mclust", "cluster"))
 }
 
 #create bins based using a suitable h split value based on maximum consensus in above  
-r11_bins <- binPrep(r11$SiteName, r11$CRA, h=100)
-summary(r11_cal, prob = 0.954, calendar = "BP")
-r11_bins
+r15_bins <- binPrep(r15$SiteName, r15$CRA, h=100)
+summary(r15_cal, prob = 0.954, calendar = "BP")
+r15_bins
 
 #Compute median date for each bin
-r11_bm <- binMed(x=r11_cal,bins=r11_bins)
-r11_bm
+r15_bm <- binMed(x=r15_cal,bins=r15_bins)
+r15_bm
 #Compute median date for each date
-r11_dm <- medCal(r11_cal)
-r11_dm
+r15_dm <- medCal(r15_cal)
+r15_dm
 
 #set up Age scale 
-r11_timeRange <- c(12000,-100)
-r11_revtimeRange <- c(-100,12000)
+r15_timeRange <- c(12000,-100)
+r15_revtimeRange <- c(-100,12000)
 
 # Clear plots
 if(!is.null(dev.list())) dev.off()
@@ -934,18 +939,18 @@ par(mar=c(4,4,2,2), oma=c(1,1,2,1),xaxs='i') # Set up margins,
 #xas = "i" tells device not to add 4% extra internal margin (which default plot style in R) 
 
 #Create and plot SPD and barCodes of median dates for each date and then each bin
-r11_spd <- spd(r11_cal, bins=r11_bins, runm=50, timeRange=r11_timeRange) #runm is running mean 
-plot(r11_spd,runm=50, xlim = r11_revtimeRange) 
+r15_spd <- spd(r15_cal, bins=r15_bins, runm=50, timeRange=r15_timeRange) #runm is running mean 
+plot(r15_spd,runm=50, xlim = r15_revtimeRange) 
 #medians for each date
-barCodes(r11_dm,yrng=c(0,0.001), width = 50, col = rgb(255, 0, 0, 50, maxColorValue = 255))
+barCodes(r15_dm,yrng=c(0,0.001), width = 50, col = rgb(255, 0, 0, 50, maxColorValue = 255))
 #medians for each bin
-barCodes(r11_bm,yrng=c(0,0.001), width = 50, col = rgb(255, 0, 0, 50, maxColorValue = 255))
+barCodes(r15_bm,yrng=c(0,0.001), width = 50, col = rgb(255, 0, 0, 50, maxColorValue = 255))
 
 #Stack SPD plot based groups defined as sitename in this case
-r11_res = stackspd(x=r11_cal,timeRange=r11_timeRange,bins=r11_bins,group=r11$SiteName)
-plot(r11_res,type='lines', xlim = r11_revtimeRange)
+r15_res = stackspd(x=r15_cal,timeRange=r15_timeRange,bins=r15_bins,group=r15$SiteName)
+plot(r15_res,type='lines', xlim = r15_revtimeRange)
 #medians for each bin
-barCodes(r11_bm,yrng=c(0,0.001), width = 50, col = rgb(255, 0, 0, 50, maxColorValue = 255))
+barCodes(r15_bm,yrng=c(0,0.001), width = 50, col = rgb(255, 0, 0, 50, maxColorValue = 255))
 
 # Clear plots
 if(!is.null(dev.list())) dev.off()
@@ -956,9 +961,9 @@ par(mar=c(4,4,2,2), oma=c(1,1,2,1),xaxs='i') # Set up margins,
 #xas = "i" tells device not to add 4% extra internal margin (which default plot style in R) 
 
 #other types of plot
-plot(r11_res,type='stacked', xlim = r11_revtimeRange, legend = TRUE, legend.arg = NULL)  #most useful for summaries of multiple sites / types
+plot(r15_res,type='stacked', xlim = r15_revtimeRange, legend = TRUE, legend.arg = NULL)  #most useful for summaries of multiple sites / types
 #plot(res1,type='proportion') #not that useful
-plot(r11_res,type='multipanel', xlim = r11_revtimeRange, legend = TRUE, legend.arg = NULL) #nice clear plot for one site 
+plot(r15_res,type='multipanel', xlim = r15_revtimeRange, legend = TRUE, legend.arg = NULL) #nice clear plot for one site 
 
 
 # Clear plots
@@ -970,15 +975,15 @@ par(mar=c(4,4,2,2), oma=c(1,1,2,1),xaxs='i') # Set up margins,
 #xas = "i" tells device not to add 4% extra internal margin (which default plot style in R) 
 
 #Calibrated age ranges summaries
-multiplot(r11_cal,type='b',calendar='BP',cex.id = 0.5,lwd=2,
-          gapFactor = 0.5, xlim = r11_revtimeRange)
-multiplot(r11_cal,HPD=TRUE,decreasing=TRUE,label=TRUE,
-          gapFactor = 0.5, xlab = "Age [a cal BP]", xlim = r11_revtimeRange, cex.id = 0.5)
+multiplot(r15_cal,type='b',calendar='BP',cex.id = 0.5,lwd=2,
+          gapFactor = 0.5, xlim = r15_revtimeRange)
+multiplot(r15_cal,HPD=TRUE,decreasing=TRUE,label=TRUE,
+          gapFactor = 0.5, xlab = "Age [a cal BP]", xlim = r15_revtimeRange, cex.id = 0.5)
 
 #plot a kde for calibrated ages
-r11_s = sampleDates(r11_cal,bins=r11_bins,nsim=100,boot=FALSE)
-ckdeNorm = ckde(r11_s,timeRange=r11_timeRange, bw=100,normalised=TRUE)
-plot(ckdeNorm,type='multiline',calendar='BP',interval = 0.95, xlim = r11_revtimeRange, 
+r15_s = sampleDates(r15_cal,bins=r15_bins,nsim=100,boot=FALSE)
+ckdeNorm = ckde(r15_s,timeRange=r15_timeRange, bw=100,normalised=TRUE)
+plot(ckdeNorm,type='multiline',calendar='BP',interval = 0.95, xlim = r15_revtimeRange, 
      main = "Advance KGI: Composite Kernel Density Estimate (Quantile Int. = 0.95)")
 par(new = TRUE) #hold the plot frame to add median values
 p_axis <- c(axis(1, seq(0,12000,1000), tck=-0.04), axis(1, seq(-100,12000,100),labels=rep("",122), tck=-0.02),
@@ -988,8 +993,8 @@ p_axis <- c(axis(1, seq(0,12000,1000), tck=-0.04), axis(1, seq(-100,12000,100),l
 par(new = FALSE) #remove hold on the plot frame to add median values
 
 #set up for plotting later on and write to csv for use in other programs
-r11_p1 <- plot(r11_spd,runm=50, xlim = r11_revtimeRange)
-write.csv(r11_spd$grid,"/Users/Steve/Dropbox/BAS/Data/R/RCarbon/r11_spd.csv", row.names = FALSE)
+r15_p1 <- plot(r15_spd,runm=50, xlim = r15_revtimeRange)
+write.csv(r15_spd$grid,"/Users/Steve/Dropbox/BAS/Data/R/RCarbon/r15_spd.csv", row.names = FALSE)
 
 
 
@@ -1022,9 +1027,9 @@ r6_C14summary <- describe_distribution(r6_cal_sum$CRA)
 r6_Calsummary  <- describe_distribution(r6_cal_sum$MedianBP)
 r6_C14summary
 r6_Calsummary 
-write.csv(r6_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r6_C14summary.csv", row.names = FALSE)
-write.csv(r6_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r6_Calsummary.csv", row.names = FALSE)
-write.csv(r6_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Outputs/r6_cal_sum.csv", row.names = FALSE)
+write.csv(r6_C14summary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r6_C14summary.csv", row.names = FALSE)
+write.csv(r6_Calsummary,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r6_Calsummary.csv", row.names = FALSE)
+write.csv(r6_cal_sum,"/Users/Steve/Dropbox/BAS/Data/R/BChron/Data/Outputss/r6_cal_sum.csv", row.names = FALSE)
 
 #++++++ Investigate subsets +++++++
 # Subsets of all dates that have a probability above 0.5 and are <6000 BP
@@ -1150,6 +1155,7 @@ par(new = FALSE) #remove hold on the plot frame to add median values
 #set up for plotting later on and write to csv for use in other programs
 r6_p1 <- plot(r6_spd,runm=50, xlim = r6_revtimeRange)
 write.csv(r6_spd$grid,"/Users/Steve/Dropbox/BAS/Data/R/RCarbon/r6_spd.csv", row.names = FALSE)
+
 
 
 # SECTION 3: Final plots for Fildes and Potter papers ---------------------------------------------------------------
