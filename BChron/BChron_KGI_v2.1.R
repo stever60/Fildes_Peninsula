@@ -45,7 +45,7 @@ if(!is.null(dev.list())) dev.off()
 # SECTION 1: import datasets ------------------------------
 
 #set working directory on mac
-setwd("/Users/Steve/Dropbox/BAS/Data/R/BChron/Data")
+setwd("/Users/Steve/Dropbox/BAS/Data/R/BChron/KGI/Data")
 #check working directory
 getwd()
 
@@ -113,7 +113,7 @@ x4 <- ART_Hall_Mar20666
 # Read in csv input files - fast start  -----------------------------------------
 
 # Fildes paper - new Artigas Beach C14 data - this study
-x2 <- read.csv("nputs/x2_ART_Terr20.csv")
+x2 <- read.csv("Inputs/x2_ART_Terr20.csv")
 
 # Fildes paper - all Shetland I Moraine terrestrial C14 data - this study & Hall 2007
 x2.1 <- read.csv("Inputs/x2.1_ART_Hall_Terr20.csv")
@@ -151,7 +151,7 @@ x16 <- read.csv("Inputs/x16_Aq_Moss_Fildes.csv")
 x17 <- read.csv("Inputs/Yanou_GDGT.csv")
 
 # Kiteschee Lake - diatom data
-x18 <- read.csv("Inputs/Kite_diatoms.csv")
+x18 <- read.csv("Inputs/x18_Kite_diatoms.csv")
 
 # Published AP -regional - global data
 x20 <- read.csv("Inputs/x20_Kaplan2020_JRI_Advance.csv")
@@ -159,19 +159,21 @@ x20[v] <- x20[v] - (2010-1950)  ## subtract 1950 from samples collection date an
 x21 <- read.csv("Inputs/x21_Kaplan2020_JRI_Retreat.csv")
 x21[v] <- x21[v] - (2010-1950)  ## subtract 1950 from samples collection date and assign back
 x22 <- read.csv("Inputs/x22_WAIS_volcanic_flux.csv")
-#x23 <- read.csv("Inputs/x23_JRI_ice_core.csv")
-#x24 <- read.csv("Inputs/x24_Marcott2013_SH30-90.csv")
-#x25a <- read.csv("Inputs/x25a_Kaufmann2020_global.csv")
-#x25b <- read.csv("Inputs/x25b_Kaufmann2020_60_90S.csv")
-#x26 <- read.csv("Inputs/x26_Miliken2009.csv")
+x23 <- read.csv("Inputs/x23_JRI_ice_core.csv")
+x24 <- read.csv("Inputs/x24_Marcott2013_30_90S.csv")
+x25 <- read.csv("Inputs/x25a_Kaufmann2020.csv")
+x26 <- read.csv("Inputs/x26_Miliken2009.csv")
+x27 <- read.csv("Inputs/x27_Shevenell_TEX86.csv")
+x28 <- read.csv("Inputs/x28_Etourneaux2013_SST.csv")
+x29 <- read.csv("Inputs/x29_Roberts2017_WAP_diatoms.csv")
 
 # Mechanisms figure 
-#x30 <- read.csv("Inputs/x30_Laskar_Ins_62S.csv")
-#x31 <- read.csv("Inputs/x31_Bag_Irradiance.csv")
-#x32 <- read.csv("Inputs/x32_Saunders2018_SPECIM.csv")
-#x33 <- read.csv("Inputs/x33_Saunders2018_Cond.csv")
-#x34 <- read.csv("Inputs/x34_Moreno2018_SAM.csv")
-#x35 <- read.csv("Inputs/x35_Vol_flux_WAIS.csv")
+x30 <- read.csv("Inputs/x30_Laskar2004_InsAnomaly_62S.csv")
+x31 <- read.csv("Inputs/x31_Baggenstos2019_Irradiance.csv")
+x32 <- read.csv("Inputs/x32_Saunders2018_SPECIM.csv")
+x33 <- read.csv("Inputs/x33_Saunders2018_DCond.csv")
+x34 <- read.csv("Inputs/x34_Moreno2018_SAM.csv")
+x35 <- read.csv("Inputs/x35_Vol_flux_WAIS.csv")
 
 # Calibration  --------------------------------------------------
 
