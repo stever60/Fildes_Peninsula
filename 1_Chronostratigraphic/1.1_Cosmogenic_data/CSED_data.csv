@@ -1,0 +1,4 @@
+﻿Sample_ID,AMS_ID,Latitude_degS ,Longitude_degW,Altitude_masl,Boulder_dimension _LWH_m,Sample_thickness_cm,10Be_concentration_atoms_g-1_x10^3,10Be_concentration_SD_atoms_g-1_x10^3,10Be_age_yr_Ww,SD_int_error ,SD_ext_error ,10Be age (yr) (Kp)  ± 1σ ext. error,,Context
+Fildes1,s08808,"62° 10' 2.34"" S","58° 57' 45.97"" W",43,"2.65, 2.10, 1.98",1.4,37.1,1.9,6630,340,350,6830,660,Erratic_retreat
+Fildes2,s08809,"62° 08' 43.65"" S","58° 55' 35.96"" W",40,"0.87, 0.71, 0.35",1.2,36.4,2,6510,350,370,6710,660,Erratic_retreat
+Fildes3,s08810,"62° 08' 43.97"" S","58° 55' 37.18"" W ",39,"0.74, 0.62, 0.26",1.2,36.9,2.2,6610,390,400,6810,680,Erratic_retreat
