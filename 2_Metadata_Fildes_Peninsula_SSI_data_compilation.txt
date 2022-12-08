@@ -1,0 +1,175 @@
+Title
+Data compilation for Holocene glacial readvance from the Fildes Peninsula, South Shetland Islands, northern Antarctic Peninsula.
+
+Abstract
+The dataset comprises of chronostratigraphic data from the Fildes Peninsula, King George Island, South Shetland Islands. The data have been used to constrain deglaciation and climate-glacier dynamics on the Fildes Peninsula. 
+
+Funding source
+Data collected in this study were funded by: Centro de Investigaciones en Ciencias de la Tierra (CICTERRA), the Dirección Nacional del Antártico/Instituto Antártico Argentino (DNA/IAA) in the framework of the Project PICTA, 2011 – 0102, IAA “Geomorfología y Geología Glaciar del Archipiélago James Ross e Islas Shetland del Sur, Sector Norte de la Península Antártica”; the Alfred Wegener Institute (AWI) research program Polar regions and Coasts in a changing Earth System (PACES II); IMCONet (FP7 IRSES, action no. 318718); the Natural Environment Research Council (NERC/BAS-CGS Grant no.81); the NERC/BAS science programmes CACHE-PEP: Natural climate variability – extending the Americas palaeoclimate transect through the Antarctic Peninsula to the pole and GRADES-QWAD: Quaternary West Antarctic Deglaciations. We thank the crews of the Argentine research station “Carlini'' and the adjoined German Dallmann-Labor (AWI) Laboratory, the Uruguayan research station “Artigas”, the Russian Bellingshausen Station, the Chinese Great Wall Station, Base Presidente Eduardo Frei Montalva, the Brazilian Navy Almirante Maximiano, the UK Navy HMS Endurance and NERC/BAS James Clark Ross for logistical support during the 2006, 2011, 2014 and 2015 field seasons. 
+
+Keywords
+Deglaciation; geomorphological mapping; radiocarbon dating; South Shetland Islands; stratigraphy; glacial readvance
+
+Personnel
+Data collectors & analysts (ORCID code)
+Pablo A. Heredia Barión1,2,3 – geomorphology, chronology, sedimentology
+Jorge A. Strelin3,4 – geomorphology, chronology, sedimentology
+Cornelia Spiegel2 – cosmogenic nuclide exposure dating data collection and analysis
+Steven Binnie5 – cosmogenic nuclide exposure dating data collection and analysis
+Lukas Wacker6 – radiocarbon dating data collection and analysis
+Emma J. Pearson7 – lake sediment core data collection and analysis
+Michael J. Bentley8 – radiocarbon dating data collection and analysis
+Emma P. Hocking9 – chronological data collection and collation
+Stephen J. Roberts10 (0000-0001-5542-3703) – all data collection and analysis and data collator
+
+
+Affiliations
+1Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung, Geosciences Division, Am Alten Hafen 26, 27568 Bremerhaven, Germany.
+2University of Bremen, Department of Geosciences, Klagenfurterstr. 2-4, 28359 Bremen, Germany. 
+3Centro de Investigaciones en Ciencias de la Tierra (CONICET-UNC), Vélez Sársfield 1611, X5016GCA, Córdoba, Argentina. 
+4Instituto Antártico Argentino, Convenio MREC - Universidad Nacional de Córdoba, Vélez Sársfield 1611, X5016GCA, Córdoba, Argentina.
+5Institute for Geology und Mineralogy, University of Cologne, Zuelpicher Str. 49b, Cologne D-50674, Germany.
+6ETH Zürich, Laboratory of Ion Beam Physics, Schafmattstr. 20, 8093 Zürich, Switzerland.
+7School of Geography, Politics and Sociology, Newcastle University, Newcastle-upon-Tyne, NE1 7RU, UK.
+8Department of Geography, Durham University, Durham DH1 3LE, UK.
+9Department of Geography, Northumbria University, Ellison Building, Newcastle-upon-Tyne NE1 8ST, UK
+10British Antarctic Survey, Natural Environment Research Council, High Cross, Madingley Road, Cambridge, CB3 0ET, UK.
+
+Lineage/methodology
+
+2. SSI Data compilation: 
+Compilations of new and published age data constraining glacier advance, retreat and aquatic moss layers in lakes from the South Shetland Islands used in data analysis in the following manuscripts constrain deglaciation and glacier dynamics on Potter Peninsula and Fildes Peninsula, King George Island South Shetland Islands: 
+
+Heredia Barión P, Roberts SJ, Spiegel C, Binnie SA, Wacker L, Davies J, et al. (submitted - a) Mid–late Holocene deglaciation and glacier readvances on the Fildes Peninsula, King George Island, NW Antarctic Peninsula. The Holocene.
+
+Heredia Barión P, Strelin JA, Roberts SJ, Spiegel C, Wacker L, Niedermann S, et al. (submitted - b). Holocene glacial dynamics and geomorphology of Potter Peninsula, King George Island (NW Antarctic Peninsula). Frontiers in Earth Science.
+
+New and published chronostratigraphic data constraining Holocene glacier readvances from the Fildes Peninsula (n=43), Potter Peninsula (n=29), and KGI (n=76) were compiled and a non-parametric phase model (i.e., a probabilistic version of the Oxcal SUM command) was applied to each dataset using the Bchron v. 4.7.6 in R (Haslett and Parnell, 2008; Parnell, 2021). Density phases produced by similar analysis of published SSI-wide data were less well-defined, likely reflecting local glacier influences and larger errors for some data, and not considered further. The Rcarbon package v. 1.4.2 (Bevan, 2021) was also used for data analysis and plotting. Additional statistical analysis was undertaken, and figures constructed, using R v. 4.1.0/RStudio v. 1.4.1717 (primarily packages Tidyverse, ggplot2, Vegan, Rioja, Ggally v. 2.1.2, RBacon, Rcarbon, Bchron), Sigmaplot v. 14.0, C2 (Juggins, 2007), MATLAB v. R2021a, with final layouts achieved in Adobe Illustrator v. 26.2.1 or CorelDRAW v. 2020. Code, data, all packages used, and package references, can be found at: https://github.com/stever60/Fildes_Peninsula and https://github.com/stever60/Potter_Peninsula
+
+
+Instrumentation
+None
+
+Quality
+None
+
+Related datasets
+Chronostratigraphic data from the Fildes Peninsula, South Shetland Islands.
+Data from Kiteschsee Lake, Fildes Peninsula.
+Chronological and sedimentological data from stratigraphic sections on Potter Peninsula, South Shetland Islands.
+Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L5 (Matias Lake) on Potter Peninsula, South Shetland Islands.
+Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L15 (GPS Lake) on Potter Peninsula, South Shetland Islands.
+
+Related URLs
+Code is available on: www.github.com/stever60/Fildes_Peninsula 
+
+Temporal coverage
+Cores were extracted and data collected between November 2011 and 2015; data covers the last 8000  years
+
+Spatial coverage
+Fildes Peninsula, South Shetland Islands
+Resolution
+N/A
+
+Location
+All data are from King George Island,  South Shetland Islands ~62-65°  S and 58- 69°  W
+
+References
+
+2. SSI Data Compilation
+
+References listed in the SSI_db.csv file
+
+SSI_Advance
+
+Hall BL. (2007) Late-Holocene advance of the Collins Ice Cap, King George Island, South Shetland Islands. The Holocene 17: 1253-1258.
+
+Heredia Barión P, Roberts SJ, Spiegel C, Binnie SA, Wacker L, Davies J, et al. (submitted - a) Mid–late Holocene deglaciation and glacier readvances on the Fildes Peninsula, King George Island, NW Antarctic Peninsula. The Holocene.
+
+Heredia Barión P, Strelin JA, Roberts SJ, Spiegel C, Wacker L, Niedermann S, et al. (submitted - b). Holocene deglaciation, glacial dynamics and the geomorphology of Potter Peninsula, King George Island (Isla 25 de Mayo), NW Antarctic Peninsula. Frontiers in Earth Science.
+
+Oliva M, Antoniades D, Serrano E, et al. (2019) The deglaciation of Barton Peninsula (King George Island, South Shetland Islands, Antarctica) based on geomorphological evidence and lacustrine records. Polar Record 55: 177-188.
+
+Sugden DE and John BS. (1973) The ages of glacier fluctuations in the South Shetland Islands, Antarctica. In: van Zinderen; Bakker EM (ed) Palaeoecology of Africa, the Surrounding Islands and Antarctica. Balkema, Cape Town, 141-159.
+
+SSI_Retreat
+Birkenmajer K, Ochyra R, Olsson IU, Stuchlik L. (1985) Mid-Holocene radiocarbon-date peat at Admiralty Bay, King George Island (South Shetland Islands, West Antarctica). Bulletin of the Polish Academy of Sciences, Earth Sciences, 33: 7-13.
+
+Björck S, Håkansson H, Olsson S, Barnekow L and Janssens J. (1993) Palaeoclimatic studies in South Shetland Islands, Antarctica, based on numerous stratigraphic variables in lake sediments. Journal of Paleolimnology 8: 233-272.
+
+Björck S, Håkansson H, Zale R, et al. (1991a) A late Holocene lake sediment sequence from Livingston Island, South Shetland Islands, with palaeoclimatic implications. Antarctic Science 3: 61-72.
+
+Björck S, Nils Malmer, Christian Hjort, Per Sandgren, Ólafur Ingólfsson, Bo Wallén, Ronald Ian Lewis Smith, and Bodil Liedberg Jónsson. (1991b) Stratigraphic and Paleoclimatic Studies of a 5500-Year-Old Moss Bank on Elephant Island, Antarctica. Arctic and Alpine Research 23: 361-374.
+
+Björck, S., Hjort, C., Ingólfsson, Ó., Zale, R.Ising, J. 1996. Holocene deglaciation chronology from lake sediments. In López-Martínez, J., Thomson, M.R.A. et al., eds. Geomorphological map of Byers Peninsula, Livingston Island. BAS GEOMAP Series, Sheet 5-A. Cambridge: British Antarctic Survey, 49–51.
+del Valle RA, Montalti D, and Inbar M. (2002) Mid-Holocene macrofossil-bearing raised marine beaches at Potter Peninsula, King George Island, South Shetland Islands. Antarctic Science 14: 263–269.
+
+Hall BL. (2010) Holocene relative sea-level changes and ice fluctuations in the South Shetland Islands. Global and Planetary Change 74: 15-26.
+
+Heredia Barión P, Roberts SJ, Spiegel C, Binnie SA, Wacker L, Davies J, et al. (submitted - a) Mid–late Holocene deglaciation and glacier readvances on the Fildes Peninsula, King George Island, NW Antarctic Peninsula. The Holocene.
+
+Jeong GY. (2006) Radiocarbon ages of sorted circles on King George Island, South Shetland Islands, West Antarctica. Antarctic Science 18: 265-270.
+
+Mäusbacher R, Müller J and Schmidt R. (1989) Evolution of postglacial sedimentation in Antarctic lakes (King George Island). Zeitschrift für Geomorphologie 33: 219–234.
+
+Mäusbacher R. (1991) Die jungquartare Relief- und Klimageschichte im Bereich der Fildeshalbinsel Süd-Shetland Inseln, Antarktis. Heidelberger Geographischen Arbeiten. Geographischen Instituts der Universitat Heidelberg: Heidelberg.
+
+Oliva M, Antoniades D, Giralt S, et al. (2016a) La deglaciación de las áreas libres de hielo de las islas Shetland del Sur (Antártida). Ejemplos de Byers (Livingston) y Barton (King George). Cuaternario y Geomorfología: 14.
+
+Oliva M, Antoniades D, Giralt S, Granados I, Pla-Rabes S, Toro M, et al. (2016b) The Holocene deglaciation of the Byers Peninsula (Livingston Island, Antarctica) based on the dating of lake sedimentary records. Geomorphology 261: 89-102.
+
+Oliva M, Antoniades D, Serrano E, Giralt S, Liu EJ, Granados I, et al. (2019) The deglaciation of Barton Peninsula (King George Island, South Shetland Islands, Antarctica) based on geomorphological evidence and lacustrine records. Polar Record 55: 177-188.
+
+Schmidt R, Mäusbacher R and Müller J. (1990) Holocene diatom flora and stratigraphy from sediment cores of two Antarctic lakes (King George Island). Journal of Paleolimnology 3: 55-74.
+
+Seong YB, Owen LA, Lim HS, Yoon HI, Kim Y, Lee YI, Caffee MW. (2009). Rate of late Quaternary ice-cap thinning on King George Island, South Shetland Islands, West Antarctica defined by cosmogenic 36Cl surface exposure dating. Boreas, 38: 207-213.
+
+Simms AR, Ivins ER, DeWitt R, Kouremenos P and Simkins LM. (2012) Timing of the most recent Neoglacial advance and retreat in the South Shetland Islands, Antarctic Peninsula: insights from raised beaches and Holocene uplift rates. Quaternary Science Reviews 47: 41-55.
+
+Sun LG, Liu XD, Yin XB, Xie ZQ and Zhao JL. (2005) Sediments in palaeo-notches: potential proxy records for palaeoclimatic changes in Antarctica. Palaeogeography Palaeoclimatology Palaeoecology 218: 175-193.
+
+Tatur A, Martinez-Macchiavello JC, Niegodzisz J and del Valle R. (1999) A record of Holocene environmental changes in sediment core of Hotel Lake, King George Island, Antarctica. Polish Polar Studies 26 Polar Symposium.
+
+Toro M, Granados I, Pla S, Giralt S, Antoniades D, Galán L, et al. (2013) Chronostratigraphy of the sedimentary record of Limnopolar Lake, Byers Peninsula, Livingston Island, Antarctica. Antarctic Science 25: 198-212.
+
+Watcham EP, Bentley MJ, Hodgson DA, Roberts SJ, Fretwell PT, Lloyd JM, et al. (2011) A new Holocene relative sea level curve for the South Shetland Islands, Antarctica. Quaternary Science Reviews 30: 3152-3170.
+
+Yoon H-I, Khim B-K, Lee K, Park Y-H and Yoo K-C. (2006) Reconstruction of postglacial paleoproductivity in Long Lake, King George Island, West Antarctica. Polish Polar Research 7: 189-206.
+
+SSI_Moss.csv
+
+Björck S, Håkansson H, Olsson S, Barnekow L and Janssens J. (1993) Palaeoclimatic studies in South Shetland Islands, Antarctica, based on numerous stratigraphic variables in lake sediments. Journal of Paleolimnology 8: 233-272.
+
+
+Björck S, Håkansson H, Zale R, et al. (1991a) A late Holocene lake sediment sequence from Livingston Island, South Shetland Islands, with palaeoclimatic implications. Antarctic Science 3: 61-72.
+
+Björck, S., Hjort, C., Ingólfsson, Ó., Zale, R.Ising, J. 1996. Holocene deglaciation chronology from lake sediments. In López-Martínez, J., Thomson, M.R.A. et al., eds. Geomorphological map of Byers Peninsula, Livingston Island. BAS GEOMAP Series, Sheet 5-A. Cambridge: British Antarctic Survey, 49–51.
+
+Heredia Barión P, Roberts SJ, Spiegel C, Binnie SA, Wacker L, Davies J, et al. (submitted - a) Mid–late Holocene deglaciation and glacier readvances on the Fildes Peninsula, King George Island, NW Antarctic Peninsula. The Holocene.
+
+Heredia Barión P, Strelin JA, Roberts SJ, Spiegel C, Wacker L, Niedermann S, et al. (submitted - b). Holocene deglaciation, glacial dynamics and the geomorphology of Potter Peninsula, King George Island (Isla 25 de Mayo), NW Antarctic Peninsula. Frontiers in Earth Science.
+
+Mäusbacher R, Müller J and Schmidt R. (1989) Evolution of postglacial sedimentation in Antarctic lakes (King George Island). Zeitschrift für Geomorphologie 33: 219–234.
+
+Mäusbacher R. (1991) Die jungquartare Relief- und Klimageschichte im Bereich der Fildeshalbinsel Süd-Shetland Inseln, Antarktis. Heidelberger Geographischen Arbeiten. Geographischen Instituts der Universitat Heidelberg: Heidelberg.
+
+Oliva M, Antoniades D, Giralt S, et al. (2016a) La deglaciación de las áreas libres de hielo de las islas Shetland del Sur (Antártida). Ejemplos de Byers (Livingston) y Barton (King George). Cuaternario y Geomorfología: 14.
+Oliva M, Antoniades D, Giralt S, Granados I, Pla-Rabes S, Toro M, et al. (2016b) The Holocene deglaciation of the Byers Peninsula (Livingston Island, Antarctica) based on the dating of lake sedimentary records. Geomorphology 261: 89-102.
+
+Roberts SJ, Monien P, Foster LC, et al. (2017) Past penguin colony responses to explosive volcanism on the Antarctic Peninsula. Nature Communications 8: 14914.
+
+Tatur A, Martinez-Macchiavello JC, Niegodzisz J and del Valle R. (1999) A record of Holocene environmental changes in sediment core of Hotel Lake, King George Island, Antarctica. Polish Polar Studies 26 Polar Symposium.
+
+Data structure and data format
+2. SSI Data Compilation
+
+C14_prob_density_phases.csv – summary of probability phases age ranges for compilation data from the Fildes Peninsula 
+SSI_db.csv – database of chronostratigraphic constraints on glacier advance and retreat for the South Shetland Islands 
+
+Access constraints
+None after publication but a log in for reviewers to access an embargoed dataset is needed.
+
+Use constraints
+NERC-funded data, so the Open Government Licence applies.
+
+

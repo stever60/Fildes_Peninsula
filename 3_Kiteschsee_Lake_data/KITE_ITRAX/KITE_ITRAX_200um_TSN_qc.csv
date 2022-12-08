@@ -1,5 +1,4 @@
-﻿depth,unit,min_calibrated_age,max_calibrated_age,median_calibrated_age,mean_calibrated_age,Si,K,Ca,Ti,Mn,Fe,Zn,Br,Rb,Sr,Zr,Mo_inc,Mo_coh,SUM,Mo_inc_coh_ratio
-cm,,cal_a_BP,cal_a_BP,cal_a_BP,cal_a_BP,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,pc_TSN,
+﻿depth_cm,unit,min_Sh20_age_BP,max_Sh20_age_BP,median_Sh20_age_BP,mean_Sh20_age_BP,Si_pc_TSN,K_pc_TSN,Ca_pc_TSN,Ti_pc_TSN,Mn_pc_TSN,Fe_pc_TSN,Zn_pc_TSN,Br_pc_TSN,Rb_pc_TSN,Sr_pc_TSN,Zr_pc_TSN,Mo_inc_pc_TSN,Mo_coh_pc_TSN,SUM_pc_TSN,Mo_inc_coh_ratio
 5,9,-7.15,-3.11,-5.38,-5.32,0.09,0.152,2.195,1.414,1.05,65.267,0.186,0.107,0.19,2.427,0.371,18.735,5.388,97.569,3.477208425
 5.02,9,-7.14,-3.1,-5.37,-5.31,0.05,0.13,2.452,1.481,1.202,67.784,0.166,0.099,0,2.089,0.524,16.957,5.148,98.087,3.29393155
 5.04,9,-7.13,-3.09,-5.36,-5.3,0.09,0.158,2.549,1.533,1.41,68.531,0.135,0.086,0.124,1.773,0.588,16.503,4.869,,3.389606488

@@ -1,0 +1,94 @@
+Title
+Updates to reconstructed temperature and tephra deposit age data from Yanou Lake, Fildes Peninsula, South Shetland Islands, northern Antarctic Peninsula.
+
+Abstract
+The dataset comprises of updated reconstructed temperature and tephra deposits age data from Yanou Lake, Fildes Peninsula, King George Island, South Shetland Islands. Updates of data originally published in Roberts et al. (2017) to the 2020 radiocarbon calibration curves and the Antarctic and global glycerol dialkyl glycerol tetraether (GDGT) lipid biomarker temperature calibration are included. The updated GDGT MSAT (mean summer air temperature) data was obtained by recalibrating the Pearson et al. (2011) global and Foster et al. (2016) Antarctic lake surface GDGT MSAT datasets. 
+
+Funding source
+These revisions were funded as part of the IMCONet (FP7 IRSES, action no. 318718) program led by Doris Abele (AWI); the Natural Environment Research Council (NERC/BAS-CGS Grant no.81); the NERC/BAS science programmes CACHE-PEP: Natural climate variability – extending the Americas palaeoclimate transect through the Antarctic Peninsula to the pole and GRADES-QWAD: Quaternary West Antarctic Deglaciations.
+
+Keywords
+Temperature reconstruction; radiocarbon dating; South Shetland Islands; tephra; stratigraphy
+
+Personnel
+Data collectors & analysts (ORCID code)
+Stephen J. Roberts1 (0000-0001-5542-3703) – all data collection and analysis and data collator
+Emma J. Pearson2 – lake sediment core data collection and analysis
+Imogen Gabriel3 – tephra counting and geochemistry
+Simon Blockley3 – tephra counting and geochemistry
+Louise Foster1,2  – lake sediment core data collection and analysis
+
+Affiliations
+1British Antarctic Survey, Natural Environment Research Council, High Cross, Madingley Road, Cambridge, CB3 0ET, UK.
+2School of Geography, Politics and Sociology, Newcastle University, Newcastle-upon-Tyne, NE1 7RU, UK.
+
+3Dept. of Geography, Royal Holloway, University of London, Egham, Surrey, TW20 OEX, UK.
+
+Lineage/methodology
+
+Yanou Lake data
+
+Glycerol dialkyl glycerol tetraether (GDGT) analysis of freshwater-brackish sediments from Yanou Lake dating to c. 6 ka was used to reconstruct mean summer air temperature (MSAT) and MSAT anomaly profiles (relative to the pre-industrial mean 1–0.25 cal. ka BP; RMSE = 2.45 °C; Pearson et al., 2011; Foster et al., 2016; Roberts et al., 2017). The published GDGT palaeotemperature reconstructions for Yanou Lake in Roberts et al. (2017) overestimated MSAT for data older than 2000 years due to a lack of data at the upper end of the Foster et al. (2016) Antarctic calibration dataset. Therefore, we constructed a new MSAT anomaly profile by combining GDGT-MSAT data from the global (Pearson et al., 2011) and Antarctic (Foster et al., 2016) GDGT calibration datasets and applied a new regression model based on the same compounds used in both (Juggins pers. comm). This produced a revised mean MSAT anomaly of 0.06±1.50 °C for the last 6,000 years of the Yanou Lake record, which is of a similar magnitude to the James Ross Island ice core mean annual temperature anomaly of 0.01±0.35 °C in the same period.
+
+Revised modelled ages for tephra deposits in the Yanou Lake record were produced using 2020 calibration curves and Bayesian age-depth modelling in BACON v. 2.5 in R (Blaauw and Christen, 2011).
+
+Instrumentation
+
+None – data reanalysis 
+
+Quality
+
+RMSE = 2.45 °C for temperature reconstructions; 95% confidence interval ranges for tephra data
+
+Related datasets
+Chronostratigraphic data from the Fildes Peninsula, South Shetland Islands.
+Compilation data from the Fildes Peninsula, South Shetland Islands.
+Data from Kiteschsee Lake, Fildes Peninsula, South Shetland Islands, northern Antarctic Peninsula.
+Chronological and sedimentological data from stratigraphic sections on Potter Peninsula, South Shetland Islands.
+Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L5 (Matias Lake) on Potter Peninsula, South Shetland Islands.
+Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L15 (GPS Lake) on Potter Peninsula, South Shetland Islands.
+
+Related URLs
+Code is available on: www.github.com/stever60/Fildes_Peninsula 
+
+Temporal coverage
+Cores were extracted and data collected between November 2007 and 2016; data covers the last 6000  years
+
+Spatial coverage
+Fildes Peninsula, South Shetland Islands
+Resolution
+N/A
+
+Location
+Fildes Peninsula, South Shetland Islands
+Yanou Lake is located at 62° 13.243’ S, 58° 57.591’ W
+
+References
+
+Blaauw M and Christen JA. (2011) Flexible paleoclimate age-depth models using an autoregressive gamma process. Bayesian Analysis 6: 457-474.
+
+Pearson EJ, Juggins S, Talbot HM, Weckström J, Rosén P, Ryves DB, et al. (2011) A lacustrine GDGT-temperature calibration from the Scandinavian Arctic to Antarctic: Renewed potential for the application of GDGT-paleothermometry in lakes. Geochimica et Cosmochimica Acta 75: 6225-6238.
+
+Roberts SJ, Monien P, Foster LC, Loftfield J, Hocking EP, Schnetger B, et al. (2017) Past penguin colony responses to explosive volcanism on the Antarctic Peninsula. Nature Communications 8: 14914.
+
+Foster LC, Pearson EJ, Juggins S, Hodgson DA, Saunders KM, Verleyen E, et al. (2016) Development of a regional glycerol dialkyl glycerol tetraether (GDGT)–temperature calibration for Antarctic and sub-Antarctic lakes. Earth and Planetary Science Letters 433: 370-379.
+
+Data structure and data format
+Age_depth_model folder – input and output txt and csv files for age-depth modelling runs from the Yanou Lake record
+
+GDGT_data folder – containing a Yanou_GDGT_new_calibration.csv file containing original GDGT-MSAT temperature and temperature anomaly reconstructions for Yanou Lake from Roberts et al. (2017), labelled Foster2016, with revised GDGT-MSAT temperature and temperature anomaly reconstructions, labelled NewANT+GLOBAL. Data have been updated to the new Yanou Lake 2020 age-depth model 
+
+Tephra data folder containing the following files
+	YAN_M5_Sh20_tephra_chronostratigraphy.csv – revised age data for subaquatic moss and tephra deposits in the Yanou Lake record
+
+YAN_M5_Sh20_tephra_min_max_ages.csv – revised age data tephra deposits in the Yanou Lake record 
+	
+EPMA_db.csv – new compilation of major element tephra shard geochemistry from South America  and the Antarctic used for data analysis and comparison tephra data from to the Yanou Lake record
+
+Access constraints
+None after publication but a log in for reviewers to access an embargoed dataset is needed.
+
+Use constraints
+NERC-funded data, so the Open Government Licence applies.
+
+
