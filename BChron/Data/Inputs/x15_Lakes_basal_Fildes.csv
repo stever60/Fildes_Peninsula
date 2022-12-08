@@ -1,0 +1,11 @@
+﻿id,ages,ageSds,position,thickness,calCurves,LabID,Site,Longitude,Latitude,altitude,Region,Location 
+Outer_J,8700,300,0,1,shcal20,HD11166-11024,Jurasee,-59,-62.2244,47,King George Island ,Fildes Peninsula 
+Outer_Y,10630,70,100,1,marine20666,Beta-271293,Yanou Lake,-58.9599,-62.2207,11,King George Island ,Fildes Peninsula 
+Outer_G,6366,39,0,1,shcal20,SUERC-18923,Gaoshan Lake,-58.9647,-62.2208,34.5,King George Island ,Fildes Peninsula 
+Outer_A,7552,39,100,1,shcal20,SUERC-22317,Ardley Lake,-58.94,-62.2129,18,King George Island ,Fildes Peninsula 
+Outer_L,5723,70,100,1,shcal20,NZA13465,Long Lake,-58.9671,-62.2049,12,King George Island ,Fildes Peninsula 
+Mid_H2,5410,185,50,1,shcal20,HD11417-11148,Hochlandsee,-58.9397,-62.1822,101,King George Island ,Fildes Peninsula 
+Mid_K,6950,195,50,,marine20666,HD11162-10997,Kiteschee,-62.1895,-58.9667,15.5,King George Island ,Fildes Peninsula 
+Mid_H1,6120,120,50,1,shcal20,Gd-4413,Hotel Lake,-58.9783,-62.1946,40,King George Island ,Fildes Peninsula 
+Inner_M,7200,250,0,1,shcal20,HD11415-11133,Mondsee,-58.9417,-62.1703,45,King George Island ,Fildes Peninsula 
+Inner_T,5380,165,0,1,shcal20,HD11420-11161,Tiefersee,-58.9069,-62.1844,17.5,King George Island ,Fildes Peninsula 

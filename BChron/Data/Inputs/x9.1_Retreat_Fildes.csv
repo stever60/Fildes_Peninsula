@@ -1,0 +1,19 @@
+﻿id,ages,ageSds,position,thickness,calCurves,LabID
+FP_Petrel Cave_palaeonotch,4620,65,47,1,shcal20,NIG-99050
+FP_Periglacial sorted circles,1880,40,0,1,shcal20,Beta-195311
+FP_Periglacial sorted circles,2640,40,0,1,shcal20,Beta-195313
+FP_Hochlandsee,5410,185,101,1,shcal20,HD11417-11148
+FP_Jurasee,8700,300,47,1,shcal20,HD11166-11024
+FP_Mondsee,7200,250,45,1,shcal20,HD11415-11133
+FP_Hotel Lake,6120,120,40,1,shcal20,Gd-4413
+FP_Gaoshan Lake,6366,39,34.5,1,shcal20,SUERC-18923
+FP_Profound Lake (Tiefersee),5380,165,17.5,1,shcal20,HD11420-11161
+FP_Long Lake,5723,70,12,1,shcal20,NZA13465
+FP_Ardley Lake,7552,39,18,1,shcal20,SUERC-22317
+FP_Ardley Lake,5410,285,22,1,shcal20,HD11416-11147
+FP_Ardley Island_RB,2236,216,11,1,normal,Al-03
+FP_Ardley Island_RB,1733,129,11,1,normal,Al-02
+FP_Ardley Island_RB,1656,299,11,1,normal,Al-01
+FP_Fildes 1,6630,520,43,1,normal,Fildes1cosmo
+FP_Fildes 2,6510,520,40,1,normal,Fildes2cosmo
+FP_Fildes 3,6610,550,39,1,normal,Fildes3cosmo
