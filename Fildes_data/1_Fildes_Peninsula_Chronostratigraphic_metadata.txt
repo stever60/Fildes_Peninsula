@@ -1,17 +1,23 @@
 Title
+
 Chronostratigraphic data constraining Holocene glacial readvance from the Fildes Peninsula, South Shetland Islands, northern Antarctic Peninsula.
 
 Abstract
+
 The dataset comprises of chronostratigraphic data from the Fildes Peninsula, King George Island, South Shetland Islands. The data have been used to constrain deglaciation and climate-glacier dynamics on the Fildes Peninsula. 
 
 Funding source
+
 Data collected in this study were funded by: Centro de Investigaciones en Ciencias de la Tierra (CICTERRA), the Dirección Nacional del Antártico/Instituto Antártico Argentino (DNA/IAA) in the framework of the Project PICTA, 2011 – 0102, IAA “Geomorfología y Geología Glaciar del Archipiélago James Ross e Islas Shetland del Sur, Sector Norte de la Península Antártica”; the Alfred Wegener Institute (AWI) research program Polar regions and Coasts in a changing Earth System (PACES II); IMCONet (FP7 IRSES, action no. 318718); the Natural Environment Research Council (NERC/BAS-CGS Grant no.81); the NERC/BAS science programmes CACHE-PEP: Natural climate variability – extending the Americas palaeoclimate transect through the Antarctic Peninsula to the pole and GRADES-QWAD: Quaternary West Antarctic Deglaciations. We thank the crews of the Argentine research station “Carlini'' and the adjoined German Dallmann-Labor (AWI) Laboratory, the Uruguayan research station “Artigas”, the Russian Bellingshausen Station, the Chinese Great Wall Station, Base Presidente Eduardo Frei Montalva, the Brazilian Navy Almirante Maximiano, the UK Navy HMS Endurance and NERC/BAS James Clark Ross for logistical support during the 2006, 2011, 2014 and 2015 field seasons. 
 
 Keywords
+
 Deglaciation; geomorphological mapping; radiocarbon dating; South Shetland Islands; stratigraphy; glacial readvance
 
 Personnel
+
 Data collectors & analysts (ORCID code)
+
 Pablo A. Heredia Barión1,2,3 – geomorphology, chronology, sedimentology
 Jorge A. Strelin3,4 – geomorphology, chronology, sedimentology
 Cornelia Spiegel2 – cosmogenic nuclide exposure dating data collection and analysis
@@ -24,6 +30,7 @@ Stephen J. Roberts10 (0000-0001-5542-3703) – all data collection and analysis 
 
 
 Affiliations
+
 1Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung, Geosciences Division, Am Alten Hafen 26, 27568 Bremerhaven, Germany.
 2University of Bremen, Department of Geosciences, Klagenfurterstr. 2-4, 28359 Bremen, Germany. 
 3Centro de Investigaciones en Ciencias de la Tierra (CONICET-UNC), Vélez Sársfield 1611, X5016GCA, Córdoba, Argentina. 
@@ -47,34 +54,46 @@ Large boulders >50 cm in diameter on the NW Bellingshausen Ice Cap (BIC) glacial
 Code, data, all packages used, and package references, can be found at: https://github.com/stever60/Fildes_Peninsula
 
 Instrumentation
+
 1.1 Cosmogenic data:  Quartz purity was determined prior to dissolution by ICP-OES
 
 1.2 Radiocarbon data: Samples were prepared at the Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research and British Antarctic Survey. AMS measurements were undertaken at ETH Zürich and Beta Analytical, Miami, and 13C/12C isotope ratios were used to calculate Conventional Radiocarbon Ages. 
 
 Quality
+
 1.1 Cosmogenic data: Differential GPS (dGPS; WGS84 ellipsoid) data for erratic boulders were obtained using a GPS Trimble Pathfinder ProXH. As geodetic reference, we used the landmark DALL 66019M002 (S62°14′16.335″, W58°39′52.364″, ellipsoidal height 39.376 m) at the Argentine Carlini base, c. 17 km from the sampled erratics. Post-processed uncertainties for the samples were less than 0.1 m in altitude and in the horizontal. Sample concentrations are relatively low but the maximum blank subtraction was <6%. Analytical uncertainties for the 10Be concentrations were derived by summing in quadrature the uncertainty in the mass of Be added during sample processing (estimated to be 1% at 1 sigma) and the AMS measurement uncertainties of both the samples and blank.
 
 1.2 Radiocarbon data: Pre-bomb calibrated ages have been rounded to the nearest 10 years, and to the nearest hundred years in the manuscript text to reflect realistic total (internal and external) uncertainties. Post-bomb ages have been rounded to the nearest year.
 
 Related datasets
+
 Compilation data from the Fildes Peninsula, South Shetland Islands.
 Data from Kiteschsee Lake, Fildes Peninsula.
+
 Chronological and sedimentological data from stratigraphic sections on Potter Peninsula, South Shetland Islands.
+
 Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L5 (Matias Lake) on Potter Peninsula, South Shetland Islands.
+
 Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L15 (GPS Lake) on Potter Peninsula, South Shetland Islands.
 
 Related URLs
+
 Code is available on: www.github.com/stever60/Fildes_Peninsula 
 
 Temporal coverage
+
 Data collected between November 2011 and 2015 and covers the last 8000  years
 
 Spatial coverage
+
 Fildes Peninsula, South Shetland Islands
+
 Resolution
+
 N/A
 
 Location
+
 Fildes Peninsula, South Shetland Islands
 Cosmogenic samples are from ~62° 08’ S - 62° 10' S and 58° 55' - 58° 57'  W
 Radiocarbon dating samples are from ~62° 10’ S - 62° 11' S and 58° 51' - 58° 57'  W
@@ -82,6 +101,7 @@ Radiocarbon dating samples are from ~62° 10’ S - 62° 11' S and 58° 51' - 58
 References
 
 1. New chronostratigraphic data
+
 Binnie SA, Dunai TJ, Voronina E, Goral T, Heinze S and Dewald A. (2015) Separation of Be and Al for AMS using single-step column chromatography. Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms 361: 397-401.
 
 Blaauw M and Christen JA. (2011) Flexible paleoclimate age-depth models using an autoregressive gamma process. Bayesian Analysis 6: 457-474.
@@ -93,6 +113,10 @@ Glasser NF, Davies BJ, Carrivick JL, Rodés A, Hambrey MJ, Smellie JL, et al. (2
 Haslett J and Parnell A. (2008) A simple monotone process with application to radiocarbon-dated depth chronologies. Journal of the Royal Statistical Society: Series C (Applied Statistics) 57: 399-418.
 
 Heaton TJ, Köhler P, Butzin M, Bard E, Reimer RW, Austin WEN, et al. (2020) Marine20—The Marine Radiocarbon Age Calibration Curve (0–55,000 cal BP). Radiocarbon 62: 779-820.
+
+Heredia Barión P, Roberts SJ, Spiegel C, Binnie SA, Wacker L, Davies J, et al. (in review) Holocene deglaciation and glacier readvances on the Fildes Peninsula, King George Island, NW Antarctic Peninsula. The Holocene. https://doi.org/10.31223/X59S7S 
+
+Heredia Barión P, Strelin JA, Roberts SJ, Spiegel C, Wacker L, Niedermann S, et al. (in press). Holocene deglaciation, glacial dynamics and the geomorphology of Potter Peninsula, King George Island (Isla 25 de Mayo), NW Antarctic Peninsula. Frontiers in Earth Science. https://doi.org/10.31223/X5606J 
 
 Hua Q, Barbetti M, and Rakowski AZ (2013). Atmospheric radiocarbon for the period 1950-2010. Radiocarbon 55, 1–14.
 
@@ -122,9 +146,11 @@ CSED_data.csv – cosmogenic surface exposure dating (CSED) data for erratics sa
 Fildes_C14_data.csv – radiocarbon ages from moraines and stratigraphic sections on the Fildes Peninsula
 
 Access constraints
+
 None after publication but a log in for reviewers to access an embargoed dataset is needed.
 
 Use constraints
+
 NERC-funded data, so the Open Government Licence applies.
 
 

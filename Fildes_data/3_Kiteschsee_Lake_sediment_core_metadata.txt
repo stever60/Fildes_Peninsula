@@ -1,17 +1,23 @@
 Title
+
 Data from Kiteschsee Lake, Fildes Peninsula, South Shetland Islands, northern Antarctic Peninsula.
 
 Abstract
+
 The dataset comprises of data from Kiteschsee Lake, Fildes Peninsula, King George Island, South Shetland Islands. 
 
 Funding source
+
 Data collected in this study were funded by: Centro de Investigaciones en Ciencias de la Tierra (CICTERRA), the Dirección Nacional del Antártico/Instituto Antártico Argentino (DNA/IAA) in the framework of the Project PICTA, 2011 – 0102, IAA “Geomorfología y Geología Glaciar del Archipiélago James Ross e Islas Shetland del Sur, Sector Norte de la Península Antártica”; the Alfred Wegener Institute (AWI) research program Polar regions and Coasts in a changing Earth System (PACES II); IMCONet (FP7 IRSES, action no. 318718); the Natural Environment Research Council (NERC/BAS-CGS Grant no.81); the NERC/BAS science programmes CACHE-PEP: Natural climate variability – extending the Americas palaeoclimate transect through the Antarctic Peninsula to the pole and GRADES-QWAD: Quaternary West Antarctic Deglaciations. We thank the crews of the Argentine research station “Carlini'' and the adjoined German Dallmann-Labor (AWI) Laboratory, the Uruguayan research station “Artigas”, the Russian Bellingshausen Station, the Chinese Great Wall Station, Base Presidente Eduardo Frei Montalva, the Brazilian Navy Almirante Maximiano, the UK Navy HMS Endurance and NERC/BAS James Clark Ross for logistical support during the 2006, 2011, 2014 and 2015 field seasons. 
 
 Keywords
+
 Deglaciation; geomorphological mapping; radiocarbon dating; South Shetland Islands; stratigraphy; glacial readvance
 
 Personnel
+
 Data collectors & analysts (ORCID code)
+
 Stephen J. Roberts1 (0000-0001-5542-3703) – all data collection and analysis and data collator
 Emma J. Pearson2 – lake sediment core data collection and analysis
 Joanna Davies3 – diatom analysis
@@ -23,6 +29,7 @@ Thomas P. Roland6 – Pb-210 dating analysis
 
 
 Affiliations
+
 1British Antarctic Survey, Natural Environment Research Council, High Cross, Madingley Road, Cambridge, CB3 0ET, UK.
 2School of Geography, Politics and Sociology, Newcastle University, Newcastle-upon-Tyne, NE1 7RU, UK.
 3ECRC Dept. of Geography, University College London, North West Wing, Gower St, London WC1E 6BT, UK.
@@ -41,26 +48,39 @@ Instrumentation
 High resolution X-ray fluorescence (ITRAX) core scanning (XRF-CS) of bulk sediment was performed at contiguous 0.02 cm (200 µm) intervals following standard procedures on the ITRAX-XRF machine at Aberystwyth University.
 
 Quality
+
 To account for downcore variations in count rate, density, water and organic content, XRF-CS data are presented as relative changes in percentages of the Total Scatter Normalised ratio sum (%TSN), which is equivalent to the %cps sum and as natural log ratios and centred log ratios (clr). Log ratios have been shown to produce similar downcore patterns to more traditional, and fully quantitative, Wavelength Dispersive Spectroscopy, WDS-XRF, dry subsample analysis. Data were filtered to remove the small number of downcore spectra with kcps less than mean minus two-SD, caused mainly by small gaps in the core, and MSE values greater than mean plus four-SD as this represents a poor fit of the measured to theoretical energy spectra.
+
 Related datasets
+
 Chronostratigraphic data from the Fildes Peninsula, South Shetland Islands.
+
 Compilation data from the Fildes Peninsula, South Shetland Islands.
+
 Chronological and sedimentological data from stratigraphic sections on Potter Peninsula, South Shetland Islands.
+
 Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L5 (Matias Lake) on Potter Peninsula, South Shetland Islands.
+
 Chronological, geochemical and sedimentological data from a lake sediment record extracted from Lake L15 (GPS Lake) on Potter Peninsula, South Shetland Islands.
 
 Related URLs
+
 Code is available on: www.github.com/stever60/Fildes_Peninsula 
 
 Temporal coverage
+
 Cores were extracted and data collected between November 2011 and 2015; data covers the last 8000  years
 
 Spatial coverage
+
 Fildes Peninsula, South Shetland Islands
+
 Resolution
+
 N/A
 
 Location
+
 Fildes Peninsula, South Shetland Islands
 Kiteschsee Lake is located at 62° 11’36.55’’S, 58° 57’59.93’’W 
 
@@ -68,9 +88,13 @@ References
 
 Blaauw M and Christen JA. (2011) Flexible paleoclimate age-depth models using an autoregressive gamma process. Bayesian Analysis 6: 457-474.
 
+Heredia Barión P, Roberts SJ, Spiegel C, Binnie SA, Wacker L, Davies J, et al. (in review) Holocene deglaciation and glacier readvances on the Fildes Peninsula, King George Island, NW Antarctic Peninsula. The Holocene. https://doi.org/10.31223/X59S7S 
+
+Heredia Barión P, Strelin JA, Roberts SJ, Spiegel C, Wacker L, Niedermann S, et al. (in press). Holocene deglaciation, glacial dynamics and the geomorphology of Potter Peninsula, King George Island (Isla 25 de Mayo), NW Antarctic Peninsula. Frontiers in Earth Science. https://doi.org/10.31223/X5606J 
+
 
 Data structure and data format
-3 Kiteschsee Lake
+
 Age_depth_model folder –input and output txt and csv files for age-depth modelling runs from the Kiteschsee Lake record
 
 Kite_ITRAX – folder containing ITRAX XRF core scanning datafiles
@@ -98,10 +122,13 @@ KITE_LOI_GrainSize.csv – grain size and loss-on-ignition data for the Kiteschs
 KITE_Tephra_Count_data.csv – tephra shard count data for the Kiteschsee Lake record
 
 EPMA_db.csv – new compilation of major element tephra shard geochemistry from South America  and the Antarctic used for data analysis and comparison tephra data from to the Kiteschsee Lake record
+
 Access constraints
+
 None after publication but a log in for reviewers to access an embargoed dataset is needed.
 
 Use constraints
+
 NERC-funded data, so the Open Government Licence applies.
 
 

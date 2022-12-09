@@ -341,6 +341,7 @@ summary(xDens21, type = "outliers", prob = 0.68) # Look at outlier probabilities
 
 
 
+
 # SECTION 2 - RCarbon data and plots -------------------------------------------------
 
 # Fildes Advance constraints - RCarbon for SPD and KDE plots to compare with B --------
@@ -1137,7 +1138,7 @@ write.csv(r6_spd$grid,"/Users/Steve/Dropbox/BAS/Data/R/RCarbon/r6_spd.csv", row.
 
 # SECTION 3: Final plots for Fildes and Potter papers ---------------------------------------------------------------
 
-# FILDES PAPER ------------------------------------------------------------
+# FILDES PAPER FIGURES ------------------------------------------------------------
 
 # Figure 3 ----------------------------------------------------------------
 
@@ -1995,7 +1996,8 @@ mtext("Altitude (m a.s.l.)", side=4, line=2, col = "black", cex = 0.75)
 
 
 
-# POTTER PAPER  ---------------------------------------------------------
+
+# POTTER PAPER FIGURES  ---------------------------------------------------------
 
 #set working directory on mac
 setwd("/Users/Steve/Dropbox/BAS/Data/R/BChron/KGI/Data")
@@ -2129,6 +2131,7 @@ p_axis <- c(axis(1, seq(0,18000,2000), tck=-0.04, cex.axis = 0.75), labels=rep("
 mtext("Age (a BP)", side=1, line=2, col = "black", cex = 0.75)
 mtext("Altitude (m a.s.l.)", side=4, line=3, col = "black", cex = 0.75)
 
+
 #  Figure 9: Palaeo-records ---------------------------------------------
 
 # Published datasets - import other datasets from Fildes plots above new datasets 
@@ -2194,7 +2197,7 @@ p_axis <- c(#axis(1, seq(0,12000,2000), tck=-0.08, line = 1), #axis(1, seq(0,120
 mtext("Temp. Anomaly 
       (deg. C)", side = 2, cex = 0.75, line = 4, adj=-0.1, col = "#C80000")
 
-# F) JRI ice core record - Mulvaney et al 2012
+# J) JRI ice core record - Mulvaney et al 2012
 p23 <- plot(T_anomaly~Age_BP, data = x23, pch = 21, type = "l", col="#800000", bg="#800000", 
             cex= 1, xlim = c(-100, 12000), ylim = c(-2, 2.5),
             axes=FALSE, ylab="", xlab="", xaxt="n", yaxt="n", ann=FALSE)
@@ -2393,6 +2396,7 @@ p_axis <- c(axis(1, seq(0,12000,2000), tck=-0.08, line=1), axis(1, seq(0,12000,5
 mtext("Density", side = 4, cex = 0.75, line = 5)
 #par(new = FALSE) #remove hold
 
+
 # Figure 10D  mechanisms plot to 18 ka -------------------------------------------------------------
 
 # E) KGI Deglaciation - ** new plot 0-18 ka ** align in illustrator **
@@ -2520,29 +2524,11 @@ par(new = FALSE) #remove hold on the plot frame to add median values
 
 
 
+# ++++++++++++++++  END ++++++++++++++++  --------
 
-#++++++++++++++++++++++++++++++++++++++++++++++++++++ END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++++++++ OTHER USEFUL CODE ++++++++++++++ --------
 
-# ++++++++++++++++ SOME OTHER USEFUL CODE AND STUFF ++++++++++++++ --------
-
-
-legend("topright",
-       legend = rownames(gfg_data),
-       pch = 15,
-       col = 1:nrow(gfg_data),cex=2.5)
-
-# Use Stacked SPD plot - note that S&J earlier distribution in 'stacked' plot shown in multipanel plot ends up plotting behind - fix this
-
-# STACKED PLOTS
-r6_timeRange <- c(12000,-100)
-r6_revtimeRange <- c(-100,12000)
-plot(r6_res,type='stacked', xlim = r6_revtimeRange, legend = TRUE, legend.arg = NULL)  #most useful for summaries of multiple sites / types
-#plot(res1,type='proportion')
-#plot(r6_res,type='multipanel', xlim = r6_revtimeRange, legend = TRUE, legend.arg = NULL) #nice clear plot for one site 
-
-
-
-# Convert a to ka if needed
+# Convert a to ka
 x19a <- read.csv("Inputs/x19a_YAN_A_tephra_ages.csv") #airfall only - with T3a lower error extending to T3c
 Uage <- c('Upper_95CI_age')
 age <- c('Mean_age')  ## create vector of column names to recaluculate as cal ka BP
@@ -2607,9 +2593,16 @@ summary(xDens12, type = "outliers", prob = 0.95) # Look at outlier probabilities
 summary(xDens13, type = "outliers", prob = 0.95) # Look at outlier probabilities
 summary(xDens14, type = "outliers", prob = 0.95) # Look at outlier probabilities
 
-###++++++++++++ OTHER STUFF IN BCHRON TO LOOK INTO +++++++++++
+# Use Stacked SPD plot - note that S&J earlier distribution in 'stacked' plot shown in multipanel plot ends up plotting behind - fix this
 
-#slow cluster plot 
+# STACKED PLOTS
+r6_timeRange <- c(12000,-100)
+r6_revtimeRange <- c(-100,12000)
+plot(r6_res,type='stacked', xlim = r6_revtimeRange, legend = TRUE, legend.arg = NULL)  #most useful for summaries of multiple sites / types
+#plot(res1,type='proportion')
+#plot(r6_res,type='multipanel', xlim = r6_revtimeRange, legend = TRUE, legend.arg = NULL) #nice clear plot for one site 
+
+# BChron slow cluster plot 
 cc(
   ages, 
   ageSds,
@@ -2663,6 +2656,8 @@ summary(xOut) # Default is for quantiles of ages at predictPosition values
 summary(xOut, type = "convergence") # Check model convergence
 summary(xOut, type = "outliers") # Look at outlier probabilities
 
-# Plot the output
-plot(xOut, main = "ART_terr", xlab = "Age (cal years BP)", ylab = "Altitude (m)", las = 1)
+legend("topright",
+       legend = rownames(gfg_data),
+       pch = 15,
+       col = 1:nrow(gfg_data),cex=2.5)
 
