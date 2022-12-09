@@ -45,7 +45,7 @@ N/A
 
 Quality
 
-RMSE = 2.45 and 1.65 °C for global calibration temperature reconstructions and Antarctic/revised global+Antarctic calibration temperature reconstructions
+RMSE = 2.45±1.44 °C and 1.74±1.44 °C for global calibration temperature reconstructions and Antarctic/revised global+Antarctic calibration temperature reconstructions
 
 95% confidence interval ranges for tephra data
 
