@@ -1,10 +1,10 @@
 Title
 
-Data from Kiteschsee Lake, Fildes Peninsula, South Shetland Islands, northern Antarctic Peninsula.
+Sedimentological, geochemical, biological and chronological data from a sediment core record extracted from Kiteschsee Lake, Fildes Peninsula, South Shetland Islands, northern Antarctic Peninsula.
 
 Abstract
 
-The dataset comprises of data from Kiteschsee Lake, Fildes Peninsula, King George Island, South Shetland Islands. 
+The dataset comprises of sedimentological, geochemical, biological and chronological data from a sediment core record extracted from Kiteschsee Lake sediment, Fildes Peninsula, King George Island, South Shetland Islands. 
 
 Funding source
 
@@ -41,7 +41,7 @@ Lineage/methodology
 
 Kiteschsee Lake data
 
-We undertook multi-proxy analyses (diatom, grain size, geochemical and sedimentological analysis) on a 77 cm-long sediment record extracted from the flat-bottomed eastern basin depocentre of Kiteschsee Lake and compared data obtained with published lake records from the Fildes Peninsula. A chronology for the Kiteschsee Lake sediment record was based on two aquatic moss ages, six bulk sediment AMS radiocarbon ages, and four tephra correlation ages and established using Bayesian age-depth modelling in BACON v. 2.5 in R (Blaauw and Christen, 2011).
+We undertook multi-proxy analyses (diatom, grain size, geochemical and sedimentological) on a 77 cm-long sediment record extracted from the flat-bottomed eastern basin depocentre of Kiteschsee Lake and compared data obtained with published lake records from the Fildes Peninsula. A chronology for the Kiteschsee Lake sediment record was based on two aquatic moss ages, six bulk sediment AMS radiocarbon ages, and four tephra correlation ages and established using Bayesian age-depth modelling in BACON v. 2.5 in R (Blaauw and Christen, 2011).
 
 Instrumentation
 
@@ -94,33 +94,28 @@ Heredia Barión P, Strelin JA, Roberts SJ, Spiegel C, Wacker L, Niedermann S, et
 
 Data structure and data format
 
-Age_depth_model folder –input and output txt and csv files for age-depth modelling runs from the Kiteschsee Lake record
+3_Kiteschsee Lake_data folder
+This folder contains the following folders and data files
 
-Kite_ITRAX – folder containing ITRAX XRF core scanning datafiles
+Biological data folder
+- KITE_Diatoms_pc.csv – percentage count diatom data 
+- KITE_Diatom_CONISS_PCA_sqrt.cvs – diatom data used in PCA analysis
 
-KITE_ITRAX_200um_cps_TSN.csv – summary cps (count per second) and Total Scatter Normalised data, equivalent to percentage of cps (count per second) sum data for ITRAX X-ray fluorescence core scanning (XRF-CS) analysis
-
-KITE_ITRAX_200um_TSN_qc.csv – percentage Total Scatter Normalised data, equivalent to percentage of cps (count per second) sum summary data for ITRAX X-ray fluorescence core scanning (XRF-CS) analysis (quality controlled – qc – filtered)
-
-Kite1.1_basal folder – folder containing document settings txt file, summary output txt files, summary average spectra txt file, and optical and X-ray image tifs and a folder with all raw XRF spectra txt files for the Kite 1.1 core section
-
+Geochemical and sedimentological data folder
+- Kite_ITRAX – folder containing ITRAX XRF core scanning datafiles
+- KITE_ITRAX_200um_cps_TSN.csv – summary cps (count per second) and Total Scatter Normalised data, equivalent to percentage of cps (count per second) sum data for ITRAX X-ray fluorescence core scanning (XRF-CS) analysis
+- KITE_ITRAX_200um_TSN_qc.csv – percentage Total Scatter Normalised data, equivalent to percentage of cps (count per second) sum summary data for ITRAX X-ray fluorescence core scanning (XRF-CS) analysis (quality controlled – qc – filtered)
+- Kite1.1_basal folder – folder containing document settings txt file, summary output txt files, summary average spectra txt file, and optical and X-ray image tifs and a folder with all raw XRF spectra txt files for the Kite 1.1 core section
 Kite2.1_top folder – folder containing document settings txt file, summary output txt files, summary average spectra txt file, and optical and X-ray image tifs and a folder with all raw XRF spectra txt files for the Kite 2.1 core section
+- KITE_DMAR_MSCL_Density.csv_subsample density and GEOTEK MSCL (multi-sensor core logger) density data compared
+- KITE_GEOTEK_MSCL_0.5cm.csv – GEOTEK MSCL data
+- KITE_LOI_GrainSize.csv – grain size and loss-on-ignition data for the Kiteschsee Lake record
+- KITE_Tephra_Count_data.csv – tephra shard count data for the Kiteschsee Lake record
+- EPMA_db.csv – new compilation of major element tephra shard geochemistry from South America  and the Antarctic used for data analysis and comparison tephra data from to the Kiteschsee Lake record
 
-Kite_C14_data.csv – radiocarbon ages from the Kiteschsee Lake record
-
-KITE_Diatoms_pc.csv – percentage count diatom data 
-
-KITE_Diatom_CONISS_PCA_sqrt.cvs – diatom data used in PCA analysis
-
-KITE_DMAR_MSCL_Density.csv_subsample density and GEOTEK MSCL (multi-sensor core logger) density data compared
-
-KITE_GEOTEK_MSCL_0.5cm.csv – GEOTEK MSCL data
-
-KITE_LOI_GrainSize.csv – grain size and loss-on-ignition data for the Kiteschsee Lake record
-
-KITE_Tephra_Count_data.csv – tephra shard count data for the Kiteschsee Lake record
-
-EPMA_db.csv – new compilation of major element tephra shard geochemistry from South America  and the Antarctic used for data analysis and comparison tephra data from to the Kiteschsee Lake record
+Chronological data folder
+- Age_depth_model folder –input and output txt and csv files for age-depth modelling runs from the Kiteschsee Lake record
+- Kite_C14_data.csv – radiocarbon ages from the Kiteschsee Lake record
 
 Access constraints
 

@@ -1,0 +1,16 @@
+Base path:	Sample name:	Section name	User ID
+C:\Data\BAS_sjro	Kite	Kite-2-1	sjd
+Year	Month	Day	Time
+2018	05	09	13
+Voltage	45	kV	
+Current	50	mA	
+Exposure time	200	ms	
+line camera signal level	65238	at 25 ms	
+Step size	200	microns	
+XRF	ON		
+XRF exp. time	10	seconds	
+Start coordinate	112.0	Stop coordinate	385.0
+XRF voltage and current	30	  	50
+Tube	Mo		
+Optical Start	0.5	Optical End	419.5
+Step size	500	microns	
