@@ -1,0 +1,23 @@
+﻿id,ages,ageSds,Latitude,Longitude,position,thickness,calCurves,LabID,Altitude,Type,Context,Location ,Blank
+LI-13-01,7410,260,-63.7609,-58.1781,0,0,normal,LI-13-01,91,Erratic,retreat,Long Island,BLK1-2014Jul31
+LI-13-02,7370,240,-63.7608,-58.1785,0,0,normal,LI-13-02,91,Erratic,retreat,Long Island,BLK1-2014Jul31
+LI-13-03,10600,610,-63.7610,-58.1792,0,0,normal,LI-13-03,94,Erratic,retreat,Long Island,BLK1-2014Jul31
+LI-13-04,8190,260,-63.7611,-58.1792,0,0,normal,LI-13-04,94,Erratic,retreat,Long Island,BLK1-2014Jul31
+LI-13-05,10300,280,-63.7615,-58.1782,0,0,normal,LI-13-05,95,Erratic,retreat,Long Island,BLK1-2014Jul31
+LI-13-06,7960,240,-63.7615,-58.1783,0,0,normal,LI-13-06,93,Erratic,retreat,Long Island,BLK1-2014Jul31
+SEY-13-01,3860,200,-64.2437,-56.6561,0,0,normal,SEY-13-01,208,Erratic,retreat,Seymour Island ,NA
+SEY-13-02,5310,200,-64.2467,-56.6527,0,0,normal,SEY-13-02,206,Erratic,retreat,Seymour Island ,NA
+SEY-13-04,9340,250,-64.2580,-56.6522,0,0,normal,SEY-13-04,202,Erratic,retreat,Seymour Island ,NA
+JRQ-13-08,8280,250,-63.9163,-58.3013,0,0,normal,JRQ-13-08,44,Erratic,retreat,Lagrelius Peninsula,BLK1-2014Nov03
+JRQ-13-09,7630,350,-63.9202,-58.3033,0,0,normal,JRQ-13-09,38,Erratic,retreat,Lagrelius Peninsula,BLK1-2014Nov03
+JRQ-13-10,7600,210,-63.9172,-58.3056,0,0,normal,JRQ-13-10,39,Erratic,retreat,Lagrelius Peninsula,BLK1-2014Nov03
+JRQ-13-24,9640,260,-63.9237,-58.3012,0,0,normal,JRQ-13-24,56,Erratic,retreat,Lagrelius Peninsula,BLK1-2014Nov03
+JRQ-13-27,8560,220,-63.9197,-58.3074,0,0,normal,JRQ-13-27,31,Erratic,retreat,Lagrelius Peninsula,BLK1-2014Nov03
+JRQ-13-25,9290,430,-63.9193,-58.2972,0,0,normal,JRQ-13-25,54,Erratic,retreat,Lagrelius Peninsula,BLK2-2014Nov03
+JRI-14-08,3190,110,-64.0928,-58.4117,0,0,normal,JRI-14-08,71,Erratic,retreat,Rhum Glacier,BLK1-2016Jan11
+JRI-14-09,5060,240,-64.0926,-58.4133,0,0,normal,JRI-14-09,64,Erratic,retreat,Rhum Glacier,BLK-2016May06
+JRI-14-11,11900,240,-64.1160,-58.4508,0,0,normal,JRI-14-11,52,Erratic,retreat,Rhum Glacier,BLK-2016May06
+JRI-14-13,8200,210,-64.1161,-58.4497,0,0,normal,JRI-14-13,58,Erratic,retreat,Rhum Glacier,BLK-2016May06
+JRI-14-10,3080,100,-64.0928,-58.4137,0,0,normal,JRI-14-10,57,Erratic,retreat,Rhum Glacier,NA
+JRI-14-07,5150,190,-64.0929,-58.4110,0,0,normal,JRI-14-07,70,Erratic,retreat,Rhum Glacier,BLK1-2016Jun24
+JRI-14-17,3480,170,-64.0926,-58.4133,0,0,normal,JRI-14-17,62,Erratic,retreat,Rhum Glacier,BLK1-2016Jun24

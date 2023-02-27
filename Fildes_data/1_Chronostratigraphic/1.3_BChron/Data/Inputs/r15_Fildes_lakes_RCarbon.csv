@@ -1,0 +1,10 @@
+﻿LabID,CRA,Error,calCurves,resOffsets,resErrors,Material,Species,SiteName,Country,Longitude,Latitude,Region,Location ,ID
+HD11166-11024,8700,300,shcal20,0,0,Bulk freshwater sediment (352-354 cm),Outer,Jurasee,South Shetland Islands,-59,-62.2244,King George Island ,Fildes Peninsula ,Outer_Jurasee
+SUERC-18923,6366,39,shcal20,0,0,Bulk freshwater sediment (314 cm),Outer,Gaoshan Lake,South Shetland Islands,-58.9647,-62.2208,King George Island ,Fildes Peninsula ,Outer_Gaoshan Lake
+NZA13465,5723,70,shcal20,0,0,Bulk freshwater sediment (312 cm),Outer,Long Lake,South Shetland Islands,-58.9671,-62.2049,King George Island ,Fildes Peninsula ,Outer_Long Lake
+SUERC-22317,7552,39,shcal20,0,0,Bulk minerogenic marine sediment (355 cm),Outer,Ardley Lake,South Shetland Islands,-58.94,-62.2129,King George Island ,Fildes Peninsula ,Outer_Ardley Lake
+Beta-271293,10630,70,marine20,666,76,Bulk minerogenic freshwater sediment (347 cm),Outer,Yanou Lake,South Shetland Islands,-58.9599,-62.2207,King George Island ,Fildes Peninsula ,Outer_Yanou Lake
+HD11417-11148,5410,185,shcal20,0,0,Freshwater moss (175-176 cm),Mid,Hochlandsee,South Shetland Islands,-58.9397,-62.1822,King George Island ,Fildes Peninsula ,Mid_Hochlandsee
+Gd-4413,6120,120,shcal20,0,0,"Bulk freshwater sediment, gyttja rich in moss (280-290 cm)",Mid,Hotel Lake,South Shetland Islands,-58.9783,-62.1946,King George Island ,Fildes Peninsula ,Mid_Hotel Lake
+HD11415-11133,7200,250,shcal20,0,0,Bulk freshwater sediment (317-319 cm),Inner,Mondsee,South Shetland Islands,-58.9417,-62.1703,King George Island ,Fildes Peninsula ,Inner_Mondsee
+HD11420-11161,5380,165,shcal20,0,0,Bulk freshwater sediment (164-167 cm),Inner,Tiefersee,South Shetland Islands,-58.9069,-62.1844,King George Island ,Fildes Peninsula ,Inner_Tiefersee

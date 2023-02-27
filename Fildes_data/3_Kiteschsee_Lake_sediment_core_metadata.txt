@@ -111,11 +111,13 @@ Kite2.1_top folder – folder containing document settings txt file, summary out
 - KITE_GEOTEK_MSCL_0.5cm.csv – GEOTEK MSCL data
 - KITE_LOI_GrainSize.csv – grain size and loss-on-ignition data for the Kiteschsee Lake record
 - KITE_Tephra_Count_data.csv – tephra shard count data for the Kiteschsee Lake record
-- EPMA_db.csv – new compilation of major element tephra shard geochemistry from South America  and the Antarctic used for data analysis and comparison tephra data from to the Kiteschsee Lake record
+- Tephra_EPMA: data and code for Electron probe microanalysis and database comparisons including EPMA_db.csv – new compilation of major element tephra shard geochemistry from South America  and the Antarctic used for data analysis and comparison tephra data from to the Kiteschsee Lake record
+
 
 Chronological data folder
 - Age_depth_model folder –input and output txt and csv files for age-depth modelling runs from the Kiteschsee Lake record
 - Kite_C14_data.csv – radiocarbon ages from the Kiteschsee Lake record
+
 
 Access constraints
 

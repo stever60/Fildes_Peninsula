@@ -1,0 +1,2 @@
+﻿Layer1,Type,ID_method,Core_Section,Depth_min_cm,Depth_max_cm,Depth_midpoint_cm,Layer_thickness,Lower_95CI_age,Upper_95CI_age,Median_age,Mean_age,Lower_err,Upper_err,plot_y,plot_cex,size_class
+CC,Caldera event,Visible,NA,NA,NA,NA,NA,NA,NA,NA,3980,125,125,16,2,>10

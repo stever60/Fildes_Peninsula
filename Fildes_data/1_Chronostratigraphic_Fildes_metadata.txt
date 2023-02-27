@@ -65,6 +65,9 @@ Quality
 
 1.2 Radiocarbon data: Pre-bomb calibrated ages have been rounded to the nearest 10 years, and to the nearest hundred years in the manuscript text to reflect realistic total (internal and external) uncertainties. Post-bomb ages have been rounded to the nearest year.
 
+1.3 BChron data: data and code for BChron analysis of C14 data 
+
+
 Related datasets
 
 Compilation data from the Fildes Peninsula, South Shetland Islands.
@@ -144,6 +147,8 @@ CSED_data.csv – cosmogenic surface exposure dating (CSED) data for erratics sa
 
 1.2 Radiocarbon data
 Fildes_C14_data.csv – radiocarbon ages from moraines and stratigraphic sections on the Fildes Peninsula
+
+1.3 BChron data: data and code for BChron analysis of C14 data 
 
 Access constraints
 
