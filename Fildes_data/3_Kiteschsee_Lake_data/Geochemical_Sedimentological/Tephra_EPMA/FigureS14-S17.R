@@ -173,13 +173,13 @@ EPMA_RHY_filter %>%
 
 # export to csv file 
 # all filtered data to file
-write_csv(EPMA_ALL_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA/EPMA_ALL_filter.csv")
+write_csv(EPMA_ALL_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA_ALL_filter.csv")
 # BS+INT filtered data to file
-write_csv(EPMA_BSINT_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA/EPMA_BS+INT_filter.csv")
+write_csv(EPMA_BSINT_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA_BS+INT_filter.csv")
 # ACID filtered data to file
-write_csv(EPMA_ACID_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA/EPMA_ACID_filter.csv")
+write_csv(EPMA_ACID_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA_ACID_filter.csv")
 # RHY filtered data to file
-write_csv(EPMA_RHY_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA/EPMA_RHY_filter.csv")
+write_csv(EPMA_RHY_filter, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/EPMA_RHY_filter.csv")
 
 # Convert data to long format for ggplot and tidypaleo facet plotting --------------------------
 
@@ -526,19 +526,19 @@ head(kta)
 plot(kta[, ME_n], pch=19, cex = 0.05)
 
 library(bestNormalize)
-kta.bc <- select(kta, S:coh_inc) %>%
+kta.bc <- select(kta, SiO2_n:K2O_n) %>%
   replace(is.na(.), 0) %>% #convert NA to 0
   mutate_if(is.logical,as.numeric) #to convert SO2 FALSE to 0 - overcomes parsing problem with SO2
 # To convert NA to 0 in base R: EPMA_df[is.na(EPMA_df)] <- 0
 # Apply bestNormalise to see which transformation makes the data "most Normal'  - usign Ti as example vector
 kta.bc
-hist(kta.bc$TiO2)
-(kta.bc.best <- bestNormalize(kta.bc$TiO2, r = 1, k = 5))
+hist(kta.bc$CaO_n)
+(kta.bc.best <- bestNormalize(kta.bc$CaO_n, r = 1, k = 5))
 kta.bc.best
 
-(arcsinh_obj <- arcsinh_x(kta.bc$TiO2))
-(yeojohnson_obj <- yeojohnson(kta.bc$TiO2))
-(orderNorm_obj <- orderNorm(kta.bc$TiO2))
+(arcsinh_obj <- arcsinh_x(kta.bc$CaO_n))
+(yeojohnson_obj <- yeojohnson(kta.bc$CaO_n))
+(orderNorm_obj <- orderNorm(kta.bc$CaO_n))
 
 
 #centre variables and  Z-scores using scale() function - for standardised (scaled) and centred PCA analysis - values are mean of 0 and +/-1 of 1 std dev
@@ -580,13 +580,21 @@ kta.ln.Z
 #load compositions package to transform data to clr 
 library(compositions)
 
-# ADD this section
-kta.clr <- kta %>% 
-  select(any_of(ME))
+# clr - centred log ratios to use in PCA and correlations
+kta.clr1 <- kta %>% 
+  select(any_of(ME_n))
 # set zeros to NA
-kta.clr[kta_clr == 0] <- NA
-kta.clr <- as_tibble(kta_clr) %>%
-  clr() 
+kta.clr1[kta.clr1 == 0] <- NA
+kta.clr1 <- as_tibble(kta.clr1) %>% 
+  clr()
+
+# Add columns back into the clr dataframe
+kta.clr <- select(kta, ID:LongID, Total_n:Volcano) %>% 
+  bind_cols(kta.clr1) %>%
+  relocate(Total_n:Volcano, .after = K2O_n) %>% 
+  na.omit() %>% 
+  print()
+
 head(kta.clr)
 tail(kta.clr)
 
@@ -594,20 +602,25 @@ tail(kta.clr)
 write.csv(kta.sqrt,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta.csv", row.names = TRUE)
 write.csv(kta.Z,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta_Z.csv", row.names = TRUE)
 write.csv(kta.sqrt.Z,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta_sqrt_Z.csv", row.names = TRUE)
-write.csv(kta.sqrt.Z,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta_ln_Z.csv", row.names = TRUE)
-write.csv(kta.clr,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta_ln_Z.csv", row.names = TRUE)
+write.csv(kta.ln.Z,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta_ln_Z.csv", row.names = TRUE)
+write.csv(kta.clr,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta.clr.csv", row.names = TRUE)
 
 # Correlation plots  --------------------------------------------
 
 #Correlation plot - all elements, density plots and correlation matrix summary - change to clr and note difference
 library(GGally)
 # use this to see where positive/significant correlations as an overview overall
-ggcorr(kta[, ME_n], method = c("everything", "pearson"), label = TRUE, label_alpha = TRUE, label_round=2) # OR
+ggcorr(kta[, ME_n], method = c("everything", "pearson"), label = TRUE, label_alpha = TRUE, label_round=2)
+## save plot in working directory
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/FigureS16_normalised.pdf", height = c(20), width = c(20), dpi = 600, units = "cm")
+
+# AND
 ggcorr(kta.clr[, ME_n], method = c("everything", "pearson"), label = TRUE, label_alpha = TRUE, label_round=2) 
 ## save plot in working directory
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/Figure_S16.pdf", height = c(20), width = c(20), dpi = 600, units = "cm")
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/FigureS16_clr.pdf", height = c(20), width = c(20), dpi = 600, units = "cm")
 
-#then run this with +correlations only 
+#PLot correlation plot as groups
+
 ggpairs(kta.clr, columns = ME_n, upper = list(continuous = wrap("cor", size = 5)),
         lower = list(continuous = wrap("points", alpha = 0.5, size=0.2)),
         title="Correlation plot") 
@@ -626,15 +639,15 @@ plot.matrix
 for(i in 1:9) {
   for(j in 1:9){
     plot.matrix[i,j] <- plot.matrix[i,j] +
-      scale_fill_brewer(palette = "RdYlBu", direction=-1) +
-      scale_color_brewer(palette = "RdYlBu", direction=-1)
+      scale_fill_brewer(palette = "RdYlBu2", direction=-1) +
+      scale_color_brewer(palette = "RdYlBu2", direction=-1)
   }
 }
 
 plot.matrix
 
 # save plot in working directory - A4 - square dimensions
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/FigureS16.pdf", height = c(21), width = c(21), dpi = 600, units = "cm")
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/FigureS16D.pdf", height = c(21), width = c(21), dpi = 600, units = "cm")
 
 
 # new version from Nov 2021 update - need to chnage size of the density plot lines 
@@ -698,7 +711,7 @@ pca_scree <- fviz_eig(p) +
 pca_scree
 
 #save plot in working directory - A4 dimensions
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/FigureS16.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/FigureS17A_clr.pdf", 
        height = c(16), width = c(16), dpi = 600, units = "cm")
 
 # Clear plot window and plot a Screeplot of PC Inertia
@@ -716,7 +729,7 @@ x.stats <- summary(PC14)
 x.stats
 
 #write PC data and stats to csv to use later if needed
-write.csv(pca.kta,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta_sqrt_pca.csv", row.names = TRUE)
+write.csv(pca.kta,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/kta_clr_pca.csv", row.names = TRUE)
 write.csv(PC14,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/PC1-4.csv", row.names = TRUE)
 write.csv(var_percent,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/PC1-4_var_percent.csv", row.names = TRUE)
 write.csv(x.stats,"/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Outputs/PC1-4_stats.csv", row.names = TRUE)
@@ -735,7 +748,7 @@ fviz_pca_ind(p, geom = c("point", "text"), axes = c(1,2), labelsize = 2, col.ind
         axis.text = element_text(size = 10))
 
 #save plot in working directory - A4 dimensions
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_contrib.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_contrib_clr.pdf", 
        height = c(16), width = c(16), dpi = 600, units = "cm")
 
 
@@ -801,7 +814,7 @@ abline(h=0)
 text(x=b3, y=ifelse(p$rotation[,4] > 0, -0.01, p$rotation[,4]-0.01), labels=names(p$rotation[,4]), adj=1, srt=90, xpd=NA)
 
 # print plot screen to save - will be same dimensions are screen plot
-dev.print(pdf, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_load.pdf")
+dev.print(pdf, "/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_load_clr.pdf")
 
 
 # Plot variable lines and data on chosen PC axes biplots ----------------------------------
@@ -833,7 +846,7 @@ pca_var
 file4 <- tempfile("PCA_var", fileext = ".pdf")
 save_plot(file4, pca_var, ncol = 2, base_asp = 1)
 
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_var.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_var_clr.pdf", 
        height = c(16), width = c(16), dpi = 600, units = "cm")
 
 # Final graph Figure S17A ------------------------------------------------------------
@@ -844,7 +857,7 @@ ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/
 theme_set(theme_classic(base_size=12))
 pca0 <- fviz_pca_biplot(p, axes = c(1,2), label = "var", col.var = "blue",
                         #gradient.cols = c("brown", "blue"), #"Blues",
-                        habillage=kta$Group,
+                        habillage=kta.clr$Group,
                         addEllipses=TRUE, ellipse.level=0.95, 
                         palette = SAM2,
                         #c("blue", "grey50", "black", "salmon"),
@@ -856,18 +869,18 @@ pca0 <- fviz_pca_biplot(p, axes = c(1,2), label = "var", col.var = "blue",
         legend.position="bottom")
 pca0
 # save
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC1vsPC2_legend_bot.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC1vsPC2_legend_bot_clr.pdf", 
        height = c(16), width = c(16), dpi = 600, units = "cm")
 
 # Make 4 part plot with most commonly useful PC axes combinations -------
 
 pca1 <- fviz_pca_biplot(p, axes = c(1,2), label = "var", col.var = "blue", 
                         #gradient.cols = c("brown", "blue"), #"Blues",
-                        habillage=kta$Group,
+                        habillage=kta.clr$Group,
                         addEllipses=TRUE, ellipse.level=0.95, 
                         palette = SAM2,
                         #c("blue", "grey50", "black", "salmon"),
-                        title = "PC1/PC2 and Variables (68% CI)",
+                        title = "PC1/PC2 and Variables (95% CI)",
                         ggtheme = theme_classic()) + 
   theme(text = element_text(size = 12),
         axis.title = element_text(size = 12),
@@ -875,14 +888,14 @@ pca1 <- fviz_pca_biplot(p, axes = c(1,2), label = "var", col.var = "blue",
 
 pca1
 # save
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC1vsPC2_noleg.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC1vsPC2_legend_clr.pdf", 
        height = c(16), width = c(16), dpi = 600, units = "cm")
 
 
 # PC1 vs PC3
 pca2 <- fviz_pca_biplot(p, axes = c(1,3), label = "var", col.var = "blue",
                         #gradient.cols = c("brown", "blue"), #"Blues",
-                        habillage=kta$Group,
+                        habillage=kta.clr$Group,
                         addEllipses=TRUE, ellipse.level=0.95, 
                         palette = SAM2,
                         #c("blue", "grey50", "black", "salmon"),
@@ -895,13 +908,13 @@ pca2 <- fviz_pca_biplot(p, axes = c(1,3), label = "var", col.var = "blue",
 pca2
 
 # save
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC1_vs_PC3.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC1_vs_PC3_clr.pdf", 
        height = c(20), width = c(20), dpi = 600, units = "cm")
 
 # PC2 vs PC3
 pca3 <- fviz_pca_biplot(p, axes = c(2,3), label = "var", col.var = "blue",
                         #gradient.cols = c("brown", "blue"), #"Blues",
-                        habillage=kta$Group,
+                        habillage=kta.clr$Group,
                         addEllipses=TRUE, ellipse.level=0.95, 
                         palette = SAM2,
                         #c("blue", "grey50", "black", "salmon"),
@@ -913,13 +926,13 @@ pca3 <- fviz_pca_biplot(p, axes = c(2,3), label = "var", col.var = "blue",
         legend.position="none")
 pca3
 # save
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC2_vs_PC3.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC2_vs_PC3_clr.pdf", 
        height = c(20), width = c(20), dpi = 600, units = "cm")
 
 # PC2 vs PC4
 pca4 <- fviz_pca_biplot(p, axes = c(2,4), label = "var", col.var = "blue",
                         #gradient.cols = c("brown", "blue"), #"Blues",
-                        habillage=kta$Group,
+                        habillage=kta.clr$Group,
                         addEllipses=TRUE, ellipse.level=0.95, 
                         palette = SAM2,
                         #c("blue", "grey50", "black", "salmon"),
@@ -931,7 +944,7 @@ pca4 <- fviz_pca_biplot(p, axes = c(2,4), label = "var", col.var = "blue",
         legend.position="none")
 pca4
 # save
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC2_vs_PC4.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PC2_vs_PC4_clr.pdf", 
        height = c(20), width = c(20), dpi = 600, units = "cm")
 
 # Final 4 part plot -----------------------------------------------------------------------
@@ -940,7 +953,7 @@ pca_grid <- plot_grid(pca1, pca2, pca3, pca4,
                       labels = "AUTO", label_size = 16, ncol = 2)
 pca_grid
 
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_grid_final.pdf", 
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_grid_final_clr.pdf", 
        height = c(30), width = c(30), dpi = 600, units = "cm")
 
 
@@ -950,7 +963,7 @@ pca0
 # for right vertical legend do this ... 
 pca_legend <- fviz_pca_biplot(p, axes = c(1,2), label = "var", col.var = "blue",
                               #gradient.cols = c("brown", "blue"), #"Blues",
-                              habillage=kta$Group,
+                              habillage=kta.clr$Group,
                               addEllipses=TRUE, ellipse.level=0.95, 
                               palette = SAM2,
                               #c("blue", "grey50", "black", "salmon"),
@@ -971,8 +984,8 @@ pca_grid_legend
 file4 <- tempfile("PCA_final", fileext = ".pdf")
 save_plot(file4,pca_grid_legend , ncol = 2, base_asp = 1)
 
-# LP08 save
-ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_final_legend.pdf", 
+
+ggsave("/Users/Steve/Dropbox/BAS/Data/R/Papers/Heredia_Barion_2020/EPMA/Figures/PCA_final_legend_clr.pdf", 
        height = c(30), width = c(35), dpi = 600, units = "cm")
 
 # Figure S17B Cluster analysis --------------------------------------------------------
@@ -983,7 +996,7 @@ dev.off()
 .pardefault <- par()
 par(.pardefault)
 
-# k-means clustering - Dim 1 vs Dim 2 ------------------------------------------------------
+# k-means clustering - sqrt transfirned - Dim 1 vs Dim 2 ------------------------------------------------------
 
 # Visualize kmeans clustering using repel = TRUE to avoid overplotting
 kta.sqrt.scaled <- kta.sqrt.Z[ME_n]
@@ -1081,7 +1094,6 @@ dendro.plot <- ggdendrogram(data = kta_dendro, rotate = TRUE) +
   theme(axis.text.y = element_text(size = 1))
 # Preview the plot
 print(dendro.plot)
-
 
 
 # END ---------------------------------------------------------------------
