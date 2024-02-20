@@ -1,0 +1,81 @@
+﻿id,ages,ageSds,position,thickness,calCurves,LabID,altitude
+BP_Moraine_1,2180,70,NA,1,shcal20,060129-2,20
+BP_Moraine_2,1530,70,NA,1,shcal20,060129-3,20
+BP_Lake5_FWa,1490,35,NA,1,shcal20,CNA2534-2-1,50
+BP_Lake5_FWb,2830,30,NA,1,shcal20,Beta-335038,50
+BP_Lake6_FW,7150,30,NA,1,shcal20,Beta-335036,50
+BP_Lake11_FW,3495,35,NA,1,shcal20,CNA2438-2-1,50
+BP_Lake13_FW,4165,35,NA,1,shcal20,CNA2439-2-1,103
+BP_Lake12_FW,2450,30,NA,1,shcal20,Beta-335037,102
+VN1_Inner 1,3264,94,NA,1,shcal20,AA-468016,50
+VN2_Inner 4,3195,76,NA,1,shcal20,AA-468037,50
+VN3_Outer 5,2870,42,NA,1,shcal20,AA-442798,50
+VN4_Inner 1,2799,42,NA,1,shcal20,AA-442789,50
+VN5_Inner 3,2715,35,NA,1,shcal20,AA-4680510,50
+VN6_Inner 2,2609,35,NA,1,shcal20,AA-4680011,50
+VN7_Inner 1,2500,41,NA,1,shcal20,AA-4427712,50
+VN8_Inner 2,2159,44,NA,1,shcal20,AA-4680413,50
+VN9_Inner 5,2151,52,NA,1,shcal20,AA-4680714,50
+VN10_Inner 2,2136,47,NA,1,shcal20,AA-4428015,50
+VN11_Inner 5,2037,44,NA,1,shcal20,AA-4680816,50
+VN12_Inner 6,1258,37,NA,1,shcal20,AA-4356817,50
+VN13_Outer 4,894,41,NA,1,shcal20,AA-4356518,50
+VN14_Outer 2,855,32,NA,1,shcal20,AA-4679819,50
+VN15_Outer 3,713,37,NA,1,shcal20,AA-4680920,50
+VN16_Outer 2,677,45,NA,1,shcal20,AA-4680221,50
+VN17_Outer 1,264,37,NA,1,shcal20,AA-4427622,50
+VK Moraine_1,1948,40,NA,1,shcal20,AA-46810,30
+VK Moraine_2,1453,38,NA,1,shcal20,AA-43571,30
+VK Moraine_3,1403,41,NA,1,shcal20,AA-46811,30
+VK Moraine_4,1338,42,NA,1,shcal20,AA-44275,30
+VK Moraine_5,1116,48,NA,1,shcal20,AA-43570,30
+ART03 Moraine_1,1380,30,NA,1,shcal20,Beta-441409,72
+ART03 Moraine_2,1380,30,NA,1,shcal20,Beta-441410,72
+ART01 Moraine_1,1980,30,NA,1,shcal20,Beta-441405,72
+ART01 Moraine_2,1950,30,NA,1,shcal20,Beta-441406,72
+ART01 Moraine_3,1920,30,NA,1,shcal20,Beta-441407,72
+ART01 Moraine_4,1940,30,NA,1,shcal20,Beta-441408,72
+ART08 Moraine_1,2030,30,NA,1,shcal20,Beta-441411,16
+ART08 Moraine_2,2050,30,NA,1,shcal20,Beta-441412,16
+ART08 Moraine_3,1870,30,NA,1,shcal20,Beta-441413,16
+ART08 Moraine_4,1900,30,NA,1,shcal20,Beta-441414,16
+ART02 Moraine_1,2050,30,NA,1,shcal20,Beta-441415,7
+ART02 Moraine_2,2010,30,NA,1,shcal20,Beta-441417,7
+ART02 Moraine_3,1980,30,NA,1,shcal20,Beta-441418,7
+ART07 Moraine_1,7045,85,NA,1,marine20666,ETH-69688,18
+ART07 Moraine_2,6590,70,NA,1,marine20666,ETH-69689,18
+ART07 Moraine_3,6730,75,NA,1,marine20666,ETH-69690,18
+ART09 Moraine_1,6265,75,NA,1,marine20666,ETH-69691,27
+ART09 Moraine_2,5895,70,NA,1,marine20666,ETH-69692,27
+ART10 Moraine_1,6235,70,NA,1,marine20666,ETH-69693,28
+ART10 Moraine_2,5925,70,NA,1,marine20666,ETH-69694,28
+ART10 Moraine_3,6520,75,NA,1,marine20666,ETH-69695,28
+PC_SJ_section_1,7683,86,4,1,marine20666,Birm-23,0.5
+PC_SJ_section_2,9670,230,3.5,1,marine20666,Birm-48a,1
+PC_Pingfo-II_river section_1,7860,40,1.5,1,marine20666,Beta-441402,3
+PC_Pingfo-II_river section_2,7890,40,1.55,1,marine20666,Beta-441403,2.95
+PC_Pingfo-II_river section_3,8010,85,1.6,1,marine20666,ETH-67269,2.9
+PC_Pingfo-II_river section_4,7805,85,1.7,1,marine20666,ETH-67267,2.8
+PC_Pingfo-II_river section_5,7780,30,1.85,1,marine20666,Beta - 431964,2.65
+PC_Pingfo-II_river section_6,8170,85,2.05,1,marine20666,ETH-67270,2.45
+PC_Pingfo-II_river section_7,8115,80,2.1,1,marine20666,ETH-67272,2.4
+PC_Pingfo-II_river section_8,7920,20,2.56,1,marine20666,ETH-71994,1.94
+PC_Pingfo-II_river section_9,7705,80,2.7,1,marine20666,ETH-67268,1.8
+PC_Pingfo-II_river section_10,8005,85,2.95,1,marine20666,ETH-67273,1.55
+PC_Pingfo-II_river section_11,7950,70,3.05,1,marine20666,ETH-67275,1.45
+PC_Pingfo-II_river section_12,8020,90,3.05,1,marine20666,ETH-67274,1.45
+PC_Pingfo-II_river section_13,8145,70,3.1,1,marine20666,ETH-67276,1.4
+PC_Pingfo-II_river section_14,8015,20,3.11,1,marine20666,ETH-72000,1.39
+PC_Pingfo-II_river section_15,8300,75,3.3,1,marine20666,ETH-67277,1.2
+PC_Pingfo-II_river section_16,8005,20,3.41,1,marine20666,ETH-71996,1.09
+PC_Pingfo-II_river section_17,7995,20,3.46,1,marine20666,ETH-71997,1.04
+PC_Pingfo-II_river section_18,8100,40,3.5,1,marine20666,Beta - 441404,1
+PC_Pingfo-II_river section_19,8090,75,3.5,1,marine20666,ETH-67278,1
+PC_Pingfo-II_river section_20,7995,65,4,1,marine20666,ETH-72001,0.5
+PC_Pingfo-II_river section_21,8195,25,4.47,1,marine20666,ETH-71995,0.03
+PC_Pingfo-II_river section_22,7831,39,2.79,1,marine20666,SUERC-14413,1.71
+PC_Pingfo-II_river section_23,7883,39,2.79,1,marine20666,SUERC-14414,1.71
+PC_Pingfo-II_river section_24,7853,38,2.79,1,marine20666,SUERC-14416,1.71
+PC_Pingfo-II_river section_25,7842,37,2.79,1,marine20666,SUERC-14417,1.71
+PC_Inland Moraine_1,1880,30,2.2,1,shcal20,Beta-441400,97.8
+PC_Inland Moraine_2,1850,30,2.2,1,shcal20,Beta-441401,97.8

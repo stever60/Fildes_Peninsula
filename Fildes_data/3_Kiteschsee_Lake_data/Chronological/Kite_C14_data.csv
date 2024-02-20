@@ -1,0 +1,12 @@
+﻿ID No.,Sample_ID,14C_Lab_ID,Latitude_degS,Longitude_degW,Altitude_masl,Material_dated,D13C_ppt,14C_age,14C_age_SD,max_age_BP,min_age_BP,Probability,max_age_BP,min_age_BP,Probability,Median_BP,Mean_BP,2SD_BP,Context
+26,K1-M_0–0.5cm_,Beta-501582,"62° 11' 36.55""","58° 57' 59.93""",15,Drepanocladus l. sp. AM,-27.4,-100,30,-6,-7,68.3,-5,-7,95.4,-6,-6,1,Aquatic moss living in lake; collected 2011 CE
+27,K2-M_4.5-5cm_,Beta-516809,"62° 11' 36.55""","58° 57' 59.93""",15,Drepanocladus l. sp. AM,-29.3,-130,30,-6,-7,68.3,-6,-7,95.4,-7,-7,1,Aquatic moss living in lake; collected 2011 CE
+28,K3-BS_5-6cm_*,Beta-516810,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18.4,1350,30,650,460,68.3,750,370,95.4,560,560,180,Orange-brown silt; old carbon LRE= 700±100 yrs
+29,K4-BS_9–10cm_*,Beta-504801,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-23.9,1600,30,910,700,68.3,1010,600,95.4,800,800,200,Orange-brown silt; old carbon LRE= 700±100 yrs
+30,K5-BS_20–21cm_*,Beta-497408,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-32.6,9380,30,10030,9790,68.3,10130,9660,95.4,9910,9900,240,Grey silt-clay; old carbon >>LRE= 700±100 yrs
+31,K6-BS_36.5–37cm_,Beta-501584,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,1860,30,1820,1770,27.8,1830,1690,90.6,1750,1750,100,Orange-brown silt; Low carbon AMS micro-sample
+31,K6-BS_36.5–37cm_,Beta-501584,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,1860,30,1750,1700,40.5,1650,1620,4.9,NA,NA,NA,Orange-brown silt; Low carbon AMS micro-sample
+32,K7-BS_45.5–46cm_,Beta-501585,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-17.7,3350,30,3570,3480,68.3,3680,3670,1,3530,3530,100,Orange-brown silt; Low carbon AMS micro-sample
+32,K7-BS_45.5–46cm_,Beta-501585,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-17.7,3350,30,3570,3480,68.3,3640,3450,94.5,NA,NA,NA,Orange-brown silt; Low carbon AMS micro-sample
+33,K8-BS_73.5–74.5cm_,Beta-498331,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,6410,30,7420,7390,9.1,7430,7240,85.5,7300,7300,120,Bulk orange-brown silt; 𝛿13C value=terrestrial
+33,K8-BS_73.5–74.5cm_,Beta-498331,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,6410,30,7330,7250,29.2,7210,7170,10,NA,NA,NA,Bulk orange-brown silt; 𝛿13C value=terrestrial

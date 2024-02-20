@@ -1,0 +1,49 @@
+﻿ID No.,Sample_ID,14C_Lab_ID,Latitude_degS,Longitude_degW,Altitude_masl,Material_dated,D13C_ppt,14C_age _14C a,14C_age_SD,1sigma_max_age_a cal BP,1sigma_min_age_a cal BP,1sigma_Probability,2sigma_max_age_a cal BP,2sigma_min_age_a cal BP,2sigma_Probability,Median_a cal BP,Mean_a cal BP,2SD,Context
+1,ART-03A-2015,Beta-441409,"62° 10' 46.20""","58° 53' 58.34"" ",72,Terrestrial moss frag.,-22.7,1380,30,1300,1260,37.9,1310,1170,95.4,1250,1240,80,Moss in glaciofluvial sed. over 3–6; max. readvance age
+1,ART-03A-2015,Beta-441409,"62° 10' 46.20""","58° 53' 58.34"" ",72,Terrestrial moss frag.,-22.7,1380,30,1210,1180,30.4,1310,1170,95.4,1250,1240,80,Moss in glaciofluvial sed. over 3–6; max. readvance age
+2,ART-03B-2015,Beta-441410,"62° 10' 46.20""","58° 53' 58.34"" ",72,Terrestrial moss frag.,-20.5,1380,30,1300,1260,37.9,1310,1170,95.4,1250,1240,80,Moss in glaciofluvial sed. over 3–6; max. readvance age
+2,ART-03B-2015,Beta-441410,"62° 10' 46.20""","58° 53' 58.34"" ",72,Terrestrial moss frag.,-20.5,1380,30,1210,1180,30.4,1310,1170,95.4,1250,1240,80,Moss in glaciofluvial sed. over 3–6; max. readvance age
+3,ART-01A-2015,Beta-441405,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-22.6,1980,30,1890,1820,62.6,1930,1740,95.4,1850,1850,100,Moss in glaciofluvial sediments; max. readvance age
+3,ART-01A-2015,Beta-441405,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-22.6,1980,30,1770,1750,5.7,1930,1740,95.4,1850,1850,100,Moss in glaciofluvial sediments; max. readvance age
+4,ART-01B-2015,Beta-441406,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-22.4,1950,30,1870,1850,14.8,1890,1730,95.4,1810,1810,100,Moss in glaciofluvial sediments; max. readvance age
+4,ART-01B-2015,Beta-441406,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-22.4,1950,30,1840,1740,53.5,1890,1730,95.4,1810,1810,100,Moss in glaciofluvial sediments; max. readvance age
+5,ART-01A-2015 bis,Beta-441407,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-19.6,1920,30,1890,1820,58,1930,1740,95.4,1840,1830,100,Moss in glaciofluvial sediments; max. readvance age
+5,ART-01A-2015 bis,Beta-441407,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-19.6,1920,30,1770,1750,10.3,1930,1740,95.4,1840,1830,100,Moss in glaciofluvial sediments; max. readvance age
+6,ART-01B-2015 bis,Beta-441408,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-16.8,1940,30,2000,1920,60,2010,1870,95.4,1950,1940,80,Moss in glaciofluvial sediments; max. readvance age
+6,ART-01B-2015 bis,Beta-441408,"62° 10' 46.20""","58° 53' 58.34""",72,Terrestrial moss frag.,-16.8,1940,30,1910,1890,824.2,2010,1870,95.4,1950,1940,80,Moss in glaciofluvial sediments; max. readvance age
+7,ART-08-ar-A-2015,Beta-441411,"62° 10' 54.52""","58° 51' 43.94""",16,Terrestrial moss frag.,-17.9,2030,30,2010,1920,68.3,2050,2030,1.8,1960,1960,80,Moss above till; max. glacial readvance age
+7,ART-08-ar-A-2015,Beta-441411,"62° 10' 54.52""","58° 51' 43.94""",16,Terrestrial moss frag.,-17.9,2030,30,2010,1920,68.3,2020,1880,93.6,1960,1960,80,Moss above till; max. glacial readvance age
+8,ART-08-ar-B-2015,Beta-441412,"62° 10' 54.52""","58° 51' 43.94""",16,Terrestrial moss frag.,-24.5,2050,30,1820,1720,68.3,1840,1690,94.4,1770,1760,80,Moss above till; max. glacial readvance age
+8,ART-08-ar-B-2015,Beta-441412,"62° 10' 54.52""","58° 51' 43.94""",16,Terrestrial moss frag.,-24.5,2050,30,1820,1720,68.3,1650,1630,1,1770,1760,80,Moss above till; max. glacial readvance age
+9,ART-08-ab-A-2015,Beta-441413,"62° 10' 54.52""","58° 51' 43.94""",16,Terrestrial moss frag.,-20.9,1870,30,1830,1740,68.3,1880,1700,95.4,1790,1790,80,Moss in till; max. glacial readvance age
+10,ART-08-ab-B-2015,Beta-441414,"62° 10' 54.52""","58° 51' 43.94""",16,Terrestrial moss frag.,-28.6,1900,30,2010,1920,68.3,2050,2030,1.8,1960,1960,80,Moss in till; max. glacial readvance age
+10,ART-08-ab-B-2015,Beta-441414,"62° 10' 54.52""","58° 51' 43.94""",16,Terrestrial moss frag.,-28.6,1900,30,2010,1920,68.3,2020,1880,93.6,1960,1960,80,Moss in till; max. glacial readvance age
+11,ART-02-1A,Beta-441415,"62° 10' 56.07""","58° 53' 22.15""",7,Terrestrial moss frag.,-20.5,2050,30,2000,1960,24,2000,1830,95.4,1920,1930,80,"Moss in till, overlying 6-7 m amsl raised beach"
+11,ART-02-1A,Beta-441415,"62° 10' 56.07""","58° 53' 22.15""",7,Terrestrial moss frag.,-20.5,2050,30,1940,1880,44.2,2000,1830,95.4,1920,1930,80,"Moss in till, overlying 6-7 m amsl raised beach"
+12,ART-02-2A,Beta-441417,"62° 10' 56.07""","58° 53' 22.15""",7,Terrestrial moss frag.,-21.9,2010,30,1930,1830,68.3,2000,1950,12.6,1890,1890,100,"Moss in till, overlying 6-7 m amsl raised beach"
+12,ART-02-2A,Beta-441417,"62° 10' 56.07""","58° 53' 22.15""",7,Terrestrial moss frag.,-21.9,2010,30,1930,1830,68.3,1940,1820,81.6,1890,1890,100,"Moss in till, overlying 6-7 m amsl raised beach"
+12,ART-02-2A,Beta-441417,"62° 10' 56.07""","58° 53' 22.15""",7,Terrestrial moss frag.,-21.9,2010,30,1930,1830,68.3,1770,1750,1.3,1890,1890,100,"Moss in till, overlying 6-7 m amsl raised beach"
+13,ART-02-2B,Beta-441418,"62° 10' 56.07""","58° 53' 22.15""",7,Terrestrial moss frag.,-23.7,1980,30,1930,1830,68.3,2000,1750,95.4,1890,1890,100,"Moss in till, overlying 6-7 m amsl raised beach"
+14,ART-07A-2015,ETH-69688,"62° 10' 51.73""","58° 51' 39.45""",18,Laternula sp.shell,-0.9,7045,85,6790,6480,68.3,6940,6330,95.4,6630,6640,300,Shell in fine sediments; max. glacial readvance age
+15,ART-07B-2015,ETH-69689,"62° 10' 51.73""","58° 51' 39.45""",18,Laternula sp.shell,4,6590,70,6270,6000,68.3,6400,5880,95.4,6140,6140,260,Shell in fine sediments; max. glacial readvance age
+16,ART-07C-2015,ETH-69690,"62° 10' 51.73""","58° 51' 39.45""",18,Laternula sp.shell,0,6730,75,6440,6160,68.3,6570,6000,95.4,6300,6290,280,Shell in fine sediments; max. glacial readvance age
+17,ART-09A-2015,ETH-69691,"62° 10' 50.59""","58° 51' 40.66""",27,Laternula sp.shell,-2.2,6265,75,5920,5640,68.3,6090,5530,95.4,5790,5790,280,Shell in till; max. glacial readvance age
+18,ART-09B-2015,ETH-69692,"62° 10' 50.59""","58° 51' 40.66""",27,Laternula sp.shell,3.4,5895,70,5550,5280,68.3,5660,5080,95.4,5400,5390,280,Shell in till; max. glacial readvance age
+19,ART-10A-2015,ETH-69693,"62° 10' 49.04""","58° 51' 34.88""",28,Laternula sp.shell,0.9,6235,70,5890,5620,68.3,6020,5480,95.4,5760,5760,260,Shell in till; max. glacial readvance age
+20,ART-10B-2015,ETH-69694,"62° 10' 49.04""","58° 51' 34.88""",28,Laternula sp.shell,-1.2,5925,70,5560,5300,68.3,5700,5130,95.4,5430,5420,260,Shell in till; max. glacial readvance age
+21,ART-10C-2015,ETH-69695,"62° 10' 49.04""","58° 51' 34.88""",28,Laternula sp.shell,-2.8,6520,75,6200,5930,68.3,6330,5780,95.4,6070,6070,260,Shell in till; max. glacial readvance age
+22,ART-04A-2015,ETH-69684,"62° 10' 23.69""","58° 54' 59.09""",42,Laternula sp.shell,-1.4,44300,4430,45510,45040,68.3,45730,44830,95.4,45280,45280,460,Shell in fine silty/sand thrust-up marine sediments
+23,ART-04B-2015,ETH-69685,"62° 10' 23.69""","58° 54' 59.09""",42,Laternula sp.shell,2.8,43700,4370,44970,44580,68.3,45210,44430,95.4,44790,44800,400,Shell in fine silty/sand thrust-up marine sediments
+24,ART-05A-2015,ETH-69686,"62° 10' 24.55""","58° 54' 59.05""",42,Laternula sp.shell,2.8,48500,4850,50090,49170,68.3,50800,48710,95.4,49690,49720,1120,Shell in fine silty/sand thrust-up marine sediments
+25,ART-05B-2015,ETH-69687,"62° 10' 24.55""","58° 54' 59.05""",42,Laternula sp.shell,NA,51700,5170,51900,51490,68.3,52120,51300,95.4,51700,51700,400,Shell in fine silty/sand thrust-up marine sediments
+26,K1-M [0–0.5 cm],Beta-501582,"62° 11' 36.55""","58° 57' 59.93""",15,Drepanocladus l. sp. AM,-27.4,-100,30,-6,-7,68.3,-5,-7,95.4,-6,-6,1,Aquatic moss living in lake; collected 2011 CE
+27,K2-M [4.5-5 cm],Beta-516809,"62° 11' 36.55""","58° 57' 59.93""",15,Drepanocladus l. sp. AM,-29.3,-130,30,-6,-7,68.3,-6,-7,95.4,-7,-7,1,Aquatic moss living in lake; collected 2011 CE
+28,K3-BS [5-6 cm]*,Beta-516810,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18.4,1350,30,650,460,68.3,750,370,95.4,560,560,180,Orange-brown silt; old carbon LRE= 700±100 yrs
+29,K4-BS [9–10 cm]*,Beta-504801,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-23.9,1600,30,910,700,68.3,1010,600,95.4,800,800,200,Orange-brown silt; old carbon LRE= 700±100 yrs
+30,K5-BS [20–21 cm]*,Beta-497408,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-32.6,9380,30,10030,9790,68.3,10130,9660,95.4,9910,9900,240,Grey silt-clay; old carbon >>LRE= 700±100 yrs
+31,K6-BS [36.5–37 cm],Beta-501584,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,1860,30,1820,1770,27.8,1830,1690,90.6,1750,1750,100,Orange-brown silt; Low carbon AMS micro-sample
+31,K6-BS [36.5–37 cm],Beta-501584,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,1860,30,1750,1700,40.5,1650,1620,4.9,1750,1750,100,Orange-brown silt; Low carbon AMS micro-sample
+32,K7-BS [45.5–46 cm],Beta-501585,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-17.7,3350,30,3570,3480,68.3,3680,3670,1,3530,3530,100,Orange-brown silt; Low carbon AMS micro-sample
+32,K7-BS [45.5–46 cm],Beta-501585,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-17.7,3350,30,3570,3480,68.3,3640,3450,94.5,3530,3530,100,Orange-brown silt; Low carbon AMS micro-sample
+33,K8-BS [73.5–74.5 cm],Beta-498331,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,6410,30,7420,7390,9.1,7430,7240,85.5,7300,7300,120,Bulk orange-brown silt; 𝛿13C value=terrestrial
+33,K8-BS [73.5–74.5 cm],Beta-498331,"62° 11' 36.55""","58° 57' 59.93""",15,Bulk lake sediment,-18,6410,30,7330,7250,29.2,7210,7170,10,7300,7300,120,Bulk orange-brown silt; 𝛿13C value=terrestrial

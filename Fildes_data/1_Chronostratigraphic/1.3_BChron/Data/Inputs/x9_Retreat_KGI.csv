@@ -1,0 +1,29 @@
+﻿id,ages,ageSds,position,thickness,calCurves,LabID,altitude
+"AB_Rescuers Hills, Admiralty Bay",3200,130,45,1,shcal20,Gd-4635,45
+"Ar_Penguin Ridge, Arctowski",4950,140,45.5,1,shcal20,U-4325,45.5
+BP_Periglacial sorted circles_1,4710,70,175,1,shcal20,SNU 03-429,175
+BP_Periglacial sorted circles_2,2770,40,175,1,shcal20,SNU 03-279,175
+BP_Lake 6,7150,30,39,1,shcal20,Beta-335036,39
+BP_Lake 5,2830,30,35,1,shcal20,Beta-335038,35
+BP_Lake 11,3495,35,67,1,shcal20,CNA2438-2-1,67
+FP_Petrel Cave_palaeonotch,4620,65,47,1,shcal20,NIG-99050,47
+FP_Periglacial sorted circles_1,1880,40,NA,1,shcal20,Beta-195311,NA
+FP_Periglacial sorted circles_2,2640,40,NA,1,shcal20,Beta-195313,NA
+FP_Hochlandsee,5410,185,101,1,shcal20,HD11417-11148,101
+FP_Jurasee,8700,300,47,1,shcal20,HD11166-11024,47
+FP_Mondsee,7200,250,45,1,shcal20,HD11415-11133,45
+FP_Hotel Lake,6120,120,40,1,shcal20,Gd-4413,40
+FP_Gaoshan Lake,6366,39,34.5,1,shcal20,SUERC-18923,34.5
+FP_Tiefersee,5380,165,17.5,1,shcal20,HD11420-11161,17.5
+FP_Long Lake,5723,70,12,1,shcal20,NZA13465,12
+FP_Ardley Lake_1,7552,39,18,1,shcal20,SUERC-22317,18
+FP_Ardley Island_1,2236,216,11,1,normal,Al-03,11
+FP_Ardley Island_2,1733,129,11,1,normal,Al-02,11
+FP_Ardley Island_3,1656,299,11,1,normal,Al-01,11
+FP_Fildes_1,6630,520,43,1,normal,Fildes1cosmo,43
+FP_Fildes_2,6510,520,40,1,normal,Fildes2cosmo,40
+FP_Fildes_3,6610,550,39,1,normal,Fildes3cosmo,39
+PC_Pingfo I_SP_1,5750,40,17.3,1,marine20666,del-Vallee_2002-1,17.3
+PC_Pingfo I_SP_2,5840,40,17.3,1,marine20666,del-Vallee_2002-2,17.3
+PC_N Potter Peninsula,1592,47,17,1,marine20666,AA-55745,17
+WP_Weaver Peninsula,2320,120,100,1,shcal20,SNU 03-423,100
